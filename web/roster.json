@@ -1,0 +1,244 @@
+{
+  "as_of": "2026-10-18",
+  "characters": [
+    {
+      "name": "Ryu",
+      "id": "ryu",
+      "playable": true,
+      "asset": "/assets/sf6/ryu.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Luke",
+      "id": "luke",
+      "playable": true,
+      "asset": "/assets/sf6/luke.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Jamie",
+      "id": "jamie",
+      "playable": true,
+      "asset": "/assets/sf6/jamie.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Chun-Li",
+      "id": "chun-li",
+      "playable": true,
+      "asset": "/assets/sf6/chun-li.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Guile",
+      "id": "guile",
+      "playable": true,
+      "asset": "/assets/sf6/guile.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Kimberly",
+      "id": "kimberly",
+      "playable": true,
+      "asset": "/assets/sf6/kimberly.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Juri",
+      "id": "juri",
+      "playable": true,
+      "asset": "/assets/sf6/juri.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Ken",
+      "id": "ken",
+      "playable": true,
+      "asset": "/assets/sf6/ken.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "E. Honda",
+      "id": "e-honda",
+      "playable": true,
+      "asset": "/assets/sf6/e-honda.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Dhalsim",
+      "id": "dhalsim",
+      "playable": true,
+      "asset": "/assets/sf6/dhalsim.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Blanka",
+      "id": "blanka",
+      "playable": true,
+      "asset": "/assets/sf6/blanka.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Manon",
+      "id": "manon",
+      "playable": true,
+      "asset": "/assets/sf6/manon.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Marisa",
+      "id": "marisa",
+      "playable": true,
+      "asset": "/assets/sf6/marisa.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Lily",
+      "id": "lily",
+      "playable": true,
+      "asset": "/assets/sf6/lily.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "JP",
+      "id": "jp",
+      "playable": true,
+      "asset": "/assets/sf6/jp.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Dee Jay",
+      "id": "dee-jay",
+      "playable": true,
+      "asset": "/assets/sf6/dee-jay.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Cammy",
+      "id": "cammy",
+      "playable": true,
+      "asset": "/assets/sf6/cammy.png",
+      "status": "concept-crop"
+    },
+    {
+      "name": "Zangief",
+      "id": "zangief",
+      "playable": true,
+      "asset": "/assets/sf6/zangief.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Rashid",
+      "id": "rashid",
+      "playable": true,
+      "asset": "/assets/sf6/rashid.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "A.K.I.",
+      "id": "a-k-i",
+      "playable": true,
+      "asset": "/assets/sf6/a-k-i.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Ed",
+      "id": "ed",
+      "playable": true,
+      "asset": "/assets/sf6/ed.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Akuma",
+      "id": "akuma",
+      "playable": true,
+      "asset": "/assets/sf6/akuma.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "M. Bison",
+      "id": "m-bison",
+      "playable": true,
+      "asset": "/assets/sf6/m-bison.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Terry",
+      "id": "terry",
+      "playable": true,
+      "asset": "/assets/sf6/terry.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Mai",
+      "id": "mai",
+      "playable": true,
+      "asset": "/assets/sf6/mai.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Elena",
+      "id": "elena",
+      "playable": true,
+      "asset": "/assets/sf6/elena.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Sagat",
+      "id": "sagat",
+      "playable": true,
+      "asset": "/assets/sf6/sagat.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "C. Viper",
+      "id": "c-viper",
+      "playable": true,
+      "asset": "/assets/sf6/c-viper.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Alex",
+      "id": "alex",
+      "playable": true,
+      "asset": "/assets/sf6/alex.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Ingrid",
+      "id": "ingrid",
+      "playable": true,
+      "asset": "/assets/sf6/ingrid.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Yasmine",
+      "id": "yasmine",
+      "playable": true,
+      "asset": "/assets/sf6/yasmine.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Arjun",
+      "id": "arjun",
+      "playable": true,
+      "asset": "/assets/sf6/arjun.webp",
+      "status": "concept-chibi"
+    },
+    {
+      "name": "Tifa",
+      "id": "tifa",
+      "playable": false,
+      "asset": null,
+      "status": "upcoming"
+    },
+    {
+      "name": "Bosch",
+      "id": "bosch",
+      "playable": false,
+      "asset": null,
+      "status": "upcoming"
+    }
+  ],
+  "art_status": "All 32 playable characters have individual concept portraits; original 12 are concept-board crops, 20 are new transparent chibi sticker portraits. Final visual approval pending."
+}

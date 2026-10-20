@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "targetCount": 6,
+  "stages": [
+    {
+      "id": "rooftop",
+      "title": "Rooftop Circuit",
+      "status": "ready",
+      "asset": "fighting-arena-v6.png",
+      "brief": "Bangor-inspired industrial rooftops and distant lights",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "palette": {
+        "primary": "#80d7ff",
+        "secondary": "#9664ed",
+        "shadow": "#100d20"
+      },
+      "fps": [
+        24,
+        30,
+        60
+      ],
+      "defaultFps": 30,
+      "layers": [
+        {
+          "id": "sky",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-far",
+          "status": "authoring-required"
+        },
+        {
+          "id": "skyline",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-near",
+          "status": "authoring-required"
+        },
+        {
+          "id": "background",
+          "status": "composited"
+        },
+        {
+          "id": "fight-floor",
+          "status": "authoring-required"
+        },
+        {
+          "id": "foreground",
+          "status": "authoring-required"
+        },
+        {
+          "id": "emission",
+          "status": "authoring-required"
+        },
+        {
+          "id": "light-receive",
+          "status": "authoring-required"
+        },
+        {
+          "id": "occlusion",
+          "status": "authoring-required"
+        },
+        {
+          "id": "reflection",
+          "status": "authoring-required"
+        },
+        {
+          "id": "weather",
+          "status": "composited"
+        }
+      ],
+      "timeOfDay": [
+        "morning",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "weather": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "sprites": {
+        "fighters": "fighters.png + fighters-moves-v2.png",
+        "clouds": "Dedicated transparent tileable frames pending",
+        "weather": "Deterministic bounded pixel particles"
+      },
+      "generationRules": [
+        "No text/UI/HUD/fighters baked into stage art",
+        "Keep fighting floor clear and stable",
+        "Same camera and silhouettes across time-of-day variants",
+        "Cloud frames wrap seamlessly with matching first/last state",
+        "Author emission/receive/occluder masks separately; do not bake reactive glow",
+        "Crisp pixel clusters, dithered shading, nearest-neighbor display",
+        "Do not claim missing cloud sheets or masks are complete"
+      ],
+      "targetSpriteLoopSeconds": 12,
+      "runtimeLoops": "Continuous deterministic cloud drift, weather particles, reflections and vents; bespoke cloud frame sheets pending",
+      "reusedBy": [
+        "opening-fight",
+        "background",
+        "brb",
+        "ending",
+        "chatting"
+      ],
+      "focalFixture": {
+        "id": "st-neon-beacon",
+        "anchor": [
+          0.84,
+          0.16
+        ],
+        "receiver": "local wall patch",
+        "reflection": "floor strips",
+        "occluder": "fixture backing shadow; art-specific masks pending"
+      },
+      "requiredMusicReactiveAsset": {
+        "minimum": 1,
+        "plannedAssetId": "rooftop-music-ST-sign",
+        "masks": [
+          "emission",
+          "receiver",
+          "occlusion",
+          "reflection"
+        ],
+        "status": "authored source masks and real audio acceptance pending"
+      }
+    },
+    {
+      "id": "waterfront",
+      "title": "Bangor Neon Waterfront",
+      "status": "ready",
+      "asset": "waterfront-v4.png",
+      "brief": "Penobscot waterfront, bridge and industrial city silhouettes",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "palette": {
+        "primary": "#80d7ff",
+        "secondary": "#9664ed",
+        "shadow": "#100d20"
+      },
+      "fps": [
+        24,
+        30,
+        60
+      ],
+      "defaultFps": 30,
+      "layers": [
+        {
+          "id": "sky",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-far",
+          "status": "authoring-required"
+        },
+        {
+          "id": "skyline",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-near",
+          "status": "authoring-required"
+        },
+        {
+          "id": "background",
+          "status": "composited"
+        },
+        {
+          "id": "fight-floor",
+          "status": "authoring-required"
+        },
+        {
+          "id": "foreground",
+          "status": "authoring-required"
+        },
+        {
+          "id": "emission",
+          "status": "authoring-required"
+        },
+        {
+          "id": "light-receive",
+          "status": "authoring-required"
+        },
+        {
+          "id": "occlusion",
+          "status": "authoring-required"
+        },
+        {
+          "id": "reflection",
+          "status": "authoring-required"
+        },
+        {
+          "id": "weather",
+          "status": "composited"
+        }
+      ],
+      "timeOfDay": [
+        "morning",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "weather": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "sprites": {
+        "fighters": "fighters.png + fighters-moves-v2.png",
+        "clouds": "Dedicated transparent tileable frames pending",
+        "weather": "Deterministic bounded pixel particles"
+      },
+      "generationRules": [
+        "No text/UI/HUD/fighters baked into stage art",
+        "Keep fighting floor clear and stable",
+        "Same camera and silhouettes across time-of-day variants",
+        "Cloud frames wrap seamlessly with matching first/last state",
+        "Author emission/receive/occluder masks separately; do not bake reactive glow",
+        "Crisp pixel clusters, dithered shading, nearest-neighbor display",
+        "Do not claim missing cloud sheets or masks are complete"
+      ],
+      "targetSpriteLoopSeconds": 12,
+      "runtimeLoops": "Continuous deterministic cloud drift, weather particles, reflections and vents; bespoke cloud frame sheets pending",
+      "reusedBy": [
+        "opening-fight",
+        "background",
+        "brb",
+        "ending",
+        "chatting"
+      ],
+      "focalFixture": {
+        "id": "st-neon-beacon",
+        "anchor": [
+          0.84,
+          0.16
+        ],
+        "receiver": "local wall patch",
+        "reflection": "floor strips",
+        "occluder": "fixture backing shadow; art-specific masks pending"
+      },
+      "requiredMusicReactiveAsset": {
+        "minimum": 1,
+        "plannedAssetId": "waterfront-music-ST-sign",
+        "masks": [
+          "emission",
+          "receiver",
+          "occlusion",
+          "reflection"
+        ],
+        "status": "authored source masks and real audio acceptance pending"
+      }
+    },
+    {
+      "id": "afterhours",
+      "title": "After Hours",
+      "status": "ready",
+      "asset": "ending-8bit-v17.png",
+      "brief": "Existing after-hours pixel city backdrop; fighting readability review pending",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "palette": {
+        "primary": "#80d7ff",
+        "secondary": "#9664ed",
+        "shadow": "#100d20"
+      },
+      "fps": [
+        24,
+        30,
+        60
+      ],
+      "defaultFps": 30,
+      "layers": [
+        {
+          "id": "sky",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-far",
+          "status": "authoring-required"
+        },
+        {
+          "id": "skyline",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-near",
+          "status": "authoring-required"
+        },
+        {
+          "id": "background",
+          "status": "composited"
+        },
+        {
+          "id": "fight-floor",
+          "status": "authoring-required"
+        },
+        {
+          "id": "foreground",
+          "status": "authoring-required"
+        },
+        {
+          "id": "emission",
+          "status": "authoring-required"
+        },
+        {
+          "id": "light-receive",
+          "status": "authoring-required"
+        },
+        {
+          "id": "occlusion",
+          "status": "authoring-required"
+        },
+        {
+          "id": "reflection",
+          "status": "authoring-required"
+        },
+        {
+          "id": "weather",
+          "status": "composited"
+        }
+      ],
+      "timeOfDay": [
+        "morning",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "weather": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "sprites": {
+        "fighters": "fighters.png + fighters-moves-v2.png",
+        "clouds": "Dedicated transparent tileable frames pending",
+        "weather": "Deterministic bounded pixel particles"
+      },
+      "generationRules": [
+        "No text/UI/HUD/fighters baked into stage art",
+        "Keep fighting floor clear and stable",
+        "Same camera and silhouettes across time-of-day variants",
+        "Cloud frames wrap seamlessly with matching first/last state",
+        "Author emission/receive/occluder masks separately; do not bake reactive glow",
+        "Crisp pixel clusters, dithered shading, nearest-neighbor display",
+        "Do not claim missing cloud sheets or masks are complete"
+      ],
+      "targetSpriteLoopSeconds": 12,
+      "runtimeLoops": "Continuous deterministic cloud drift, weather particles, reflections and vents; bespoke cloud frame sheets pending",
+      "reusedBy": [
+        "opening-fight",
+        "background",
+        "brb",
+        "ending",
+        "chatting"
+      ],
+      "focalFixture": {
+        "id": "st-neon-beacon",
+        "anchor": [
+          0.84,
+          0.16
+        ],
+        "receiver": "local wall patch",
+        "reflection": "floor strips",
+        "occluder": "fixture backing shadow; art-specific masks pending"
+      },
+      "requiredMusicReactiveAsset": {
+        "minimum": 1,
+        "plannedAssetId": "afterhours-music-ST-sign",
+        "masks": [
+          "emission",
+          "receiver",
+          "occlusion",
+          "reflection"
+        ],
+        "status": "authored source masks and real audio acceptance pending"
+      }
+    },
+    {
+      "id": "downtown",
+      "title": "Downtown Neon Alley",
+      "status": "planned",
+      "asset": null,
+      "brief": "Bangor-inspired brick alley, painted ST graffiti, neon shop windows",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "palette": {
+        "primary": "#80d7ff",
+        "secondary": "#9664ed",
+        "shadow": "#100d20"
+      },
+      "fps": [
+        24,
+        30,
+        60
+      ],
+      "defaultFps": 30,
+      "layers": [
+        {
+          "id": "sky",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-far",
+          "status": "authoring-required"
+        },
+        {
+          "id": "skyline",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-near",
+          "status": "authoring-required"
+        },
+        {
+          "id": "background",
+          "status": "authoring-required"
+        },
+        {
+          "id": "fight-floor",
+          "status": "authoring-required"
+        },
+        {
+          "id": "foreground",
+          "status": "authoring-required"
+        },
+        {
+          "id": "emission",
+          "status": "authoring-required"
+        },
+        {
+          "id": "light-receive",
+          "status": "authoring-required"
+        },
+        {
+          "id": "occlusion",
+          "status": "authoring-required"
+        },
+        {
+          "id": "reflection",
+          "status": "authoring-required"
+        },
+        {
+          "id": "weather",
+          "status": "authoring-required"
+        }
+      ],
+      "timeOfDay": [
+        "morning",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "weather": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "sprites": {
+        "fighters": "fighters.png + fighters-moves-v2.png",
+        "clouds": "Dedicated transparent tileable frames pending",
+        "weather": "Deterministic bounded pixel particles"
+      },
+      "generationRules": [
+        "No text/UI/HUD/fighters baked into stage art",
+        "Keep fighting floor clear and stable",
+        "Same camera and silhouettes across time-of-day variants",
+        "Cloud frames wrap seamlessly with matching first/last state",
+        "Author emission/receive/occluder masks separately; do not bake reactive glow",
+        "Crisp pixel clusters, dithered shading, nearest-neighbor display",
+        "Do not claim missing cloud sheets or masks are complete"
+      ],
+      "targetSpriteLoopSeconds": 12,
+      "runtimeLoops": "Continuous deterministic cloud drift, weather particles, reflections and vents; bespoke cloud frame sheets pending",
+      "reusedBy": [
+        "opening-fight",
+        "background",
+        "brb",
+        "ending",
+        "chatting"
+      ],
+      "focalFixture": {
+        "id": "st-neon-beacon",
+        "anchor": [
+          0.84,
+          0.16
+        ],
+        "receiver": "local wall patch",
+        "reflection": "floor strips",
+        "occluder": "fixture backing shadow; art-specific masks pending"
+      },
+      "requiredMusicReactiveAsset": {
+        "minimum": 1,
+        "plannedAssetId": "downtown-music-ST-sign",
+        "masks": [
+          "emission",
+          "receiver",
+          "occlusion",
+          "reflection"
+        ],
+        "status": "authored source masks and real audio acceptance pending"
+      }
+    },
+    {
+      "id": "bridge",
+      "title": "Bridge Underpass",
+      "status": "planned",
+      "asset": null,
+      "brief": "Penobscot bridge girders, wet pavement and river reflections",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "palette": {
+        "primary": "#80d7ff",
+        "secondary": "#9664ed",
+        "shadow": "#100d20"
+      },
+      "fps": [
+        24,
+        30,
+        60
+      ],
+      "defaultFps": 30,
+      "layers": [
+        {
+          "id": "sky",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-far",
+          "status": "authoring-required"
+        },
+        {
+          "id": "skyline",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-near",
+          "status": "authoring-required"
+        },
+        {
+          "id": "background",
+          "status": "authoring-required"
+        },
+        {
+          "id": "fight-floor",
+          "status": "authoring-required"
+        },
+        {
+          "id": "foreground",
+          "status": "authoring-required"
+        },
+        {
+          "id": "emission",
+          "status": "authoring-required"
+        },
+        {
+          "id": "light-receive",
+          "status": "authoring-required"
+        },
+        {
+          "id": "occlusion",
+          "status": "authoring-required"
+        },
+        {
+          "id": "reflection",
+          "status": "authoring-required"
+        },
+        {
+          "id": "weather",
+          "status": "authoring-required"
+        }
+      ],
+      "timeOfDay": [
+        "morning",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "weather": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "sprites": {
+        "fighters": "fighters.png + fighters-moves-v2.png",
+        "clouds": "Dedicated transparent tileable frames pending",
+        "weather": "Deterministic bounded pixel particles"
+      },
+      "generationRules": [
+        "No text/UI/HUD/fighters baked into stage art",
+        "Keep fighting floor clear and stable",
+        "Same camera and silhouettes across time-of-day variants",
+        "Cloud frames wrap seamlessly with matching first/last state",
+        "Author emission/receive/occluder masks separately; do not bake reactive glow",
+        "Crisp pixel clusters, dithered shading, nearest-neighbor display",
+        "Do not claim missing cloud sheets or masks are complete"
+      ],
+      "targetSpriteLoopSeconds": 12,
+      "runtimeLoops": "Continuous deterministic cloud drift, weather particles, reflections and vents; bespoke cloud frame sheets pending",
+      "reusedBy": [
+        "opening-fight",
+        "background",
+        "brb",
+        "ending",
+        "chatting"
+      ],
+      "focalFixture": {
+        "id": "st-neon-beacon",
+        "anchor": [
+          0.84,
+          0.16
+        ],
+        "receiver": "local wall patch",
+        "reflection": "floor strips",
+        "occluder": "fixture backing shadow; art-specific masks pending"
+      },
+      "requiredMusicReactiveAsset": {
+        "minimum": 1,
+        "plannedAssetId": "bridge-music-ST-sign",
+        "masks": [
+          "emission",
+          "receiver",
+          "occlusion",
+          "reflection"
+        ],
+        "status": "authored source masks and real audio acceptance pending"
+      }
+    },
+    {
+      "id": "mill",
+      "title": "Mill District",
+      "status": "planned",
+      "asset": null,
+      "brief": "Bangor-inspired historic brick mill, vents and distant treeline",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "palette": {
+        "primary": "#80d7ff",
+        "secondary": "#9664ed",
+        "shadow": "#100d20"
+      },
+      "fps": [
+        24,
+        30,
+        60
+      ],
+      "defaultFps": 30,
+      "layers": [
+        {
+          "id": "sky",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-far",
+          "status": "authoring-required"
+        },
+        {
+          "id": "skyline",
+          "status": "authoring-required"
+        },
+        {
+          "id": "clouds-near",
+          "status": "authoring-required"
+        },
+        {
+          "id": "background",
+          "status": "authoring-required"
+        },
+        {
+          "id": "fight-floor",
+          "status": "authoring-required"
+        },
+        {
+          "id": "foreground",
+          "status": "authoring-required"
+        },
+        {
+          "id": "emission",
+          "status": "authoring-required"
+        },
+        {
+          "id": "light-receive",
+          "status": "authoring-required"
+        },
+        {
+          "id": "occlusion",
+          "status": "authoring-required"
+        },
+        {
+          "id": "reflection",
+          "status": "authoring-required"
+        },
+        {
+          "id": "weather",
+          "status": "authoring-required"
+        }
+      ],
+      "timeOfDay": [
+        "morning",
+        "day",
+        "dusk",
+        "night"
+      ],
+      "weather": [
+        "clear",
+        "cloudy",
+        "rain",
+        "snow",
+        "fog",
+        "storm"
+      ],
+      "sprites": {
+        "fighters": "fighters.png + fighters-moves-v2.png",
+        "clouds": "Dedicated transparent tileable frames pending",
+        "weather": "Deterministic bounded pixel particles"
+      },
+      "generationRules": [
+        "No text/UI/HUD/fighters baked into stage art",
+        "Keep fighting floor clear and stable",
+        "Same camera and silhouettes across time-of-day variants",
+        "Cloud frames wrap seamlessly with matching first/last state",
+        "Author emission/receive/occluder masks separately; do not bake reactive glow",
+        "Crisp pixel clusters, dithered shading, nearest-neighbor display",
+        "Do not claim missing cloud sheets or masks are complete"
+      ],
+      "targetSpriteLoopSeconds": 12,
+      "runtimeLoops": "Continuous deterministic cloud drift, weather particles, reflections and vents; bespoke cloud frame sheets pending",
+      "reusedBy": [
+        "opening-fight",
+        "background",
+        "brb",
+        "ending",
+        "chatting"
+      ],
+      "focalFixture": {
+        "id": "st-neon-beacon",
+        "anchor": [
+          0.84,
+          0.16
+        ],
+        "receiver": "local wall patch",
+        "reflection": "floor strips",
+        "occluder": "fixture backing shadow; art-specific masks pending"
+      },
+      "requiredMusicReactiveAsset": {
+        "minimum": 1,
+        "plannedAssetId": "mill-music-ST-sign",
+        "masks": [
+          "emission",
+          "receiver",
+          "occlusion",
+          "reflection"
+        ],
+        "status": "authored source masks and real audio acceptance pending"
+      }
+    }
+  ],
+  "authoringContract": {
+    "file": "art/style-kit-v1/ARTSTYLE.md",
+    "layerBlueprint": "art/style-kit-v1/psd/rooftop-layers.json",
+    "status": "specification-defined; source-layer-authoring-pending",
+    "minimumMusicReactiveAssetsPerStage": 1,
+    "brandSources": [
+      "assets/ST-Command-Center.png",
+      "arcade/world/assets/logo-glacier-violet.png"
+    ]
+  }
+}

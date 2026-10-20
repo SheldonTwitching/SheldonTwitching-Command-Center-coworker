@@ -1,0 +1,16 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const code = fs.readFileSync(__dirname + '/../web/renderer.js', 'utf-8');
+const sandbox = { window: {}, document: {addEventListener(){}} };
+vm.runInNewContext(code, sandbox);
+const parse = sandbox.window.SL.parseValue;
+const item = {fallback:'Example', parseMode:'raw', prefix:'', suffix:''};
+assert.equal(parse(item, 'NewSub'), 'NewSub');
+assert.equal(parse(item, null), 'Example');
+assert.equal(parse({...item, parseMode:'before-colon'}, 'User: $25.00'), 'User');
+assert.equal(parse({...item, parseMode:'split', delimiter:':', part:1}, 'User: $25.00'), '$25.00');
+assert.equal(parse({...item, parseMode:'amount'}, 'User sent $12.50!'), '$12.50');
+assert.equal(parse({...item, parseMode:'regex', pattern:'Donor=(\\w+)'}, 'Donor=ArcadeKing'), 'ArcadeKing');
+assert.equal(parse({...item, prefix:'[', suffix:']'}, 'Tester'), '[Tester]');
+console.log('Renderer parser: 7/7 checks passed.');

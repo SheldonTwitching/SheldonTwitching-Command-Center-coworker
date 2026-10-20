@@ -1,0 +1,68 @@
+name: Build SheldonTwitching Command Center Windows Installer
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, arcade-overlay-v2]
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build dependencies
+        run: python -m pip install -r requirements-windows.txt pytest
+      - name: Install browser test runtime
+        run: |
+          python -m pip install playwright
+          python -m playwright install chromium
+      - name: Test Python app
+        run: python -m pytest tests -q
+      - name: Test Streamlabs tip goal event script
+        run: node tests/test_streamlabs_tip.js
+      - name: Test native arcade sprite mapping
+        run: node tests/test_arcade_sprites.js
+      - name: Check arcade JavaScript syntax
+        run: |
+          node --check arcade/editor.js
+          node --check arcade/overlay.js
+          node --check arcade/sprites.js
+          node --check arcade/studio.js
+          node --check arcade/studio-scene.js
+          node --check arcade/studio-chat.js
+          node --check arcade/stages.js
+          node --check arcade/audio-input.js
+          node --check arcade/cabinet-rig.js
+          node --check arcade/cabinet-workbench.js
+          node --check arcade/cabinet-materials.js
+          node --check arcade/graffiti-marquee.js
+          node --check arcade/marquee-layer.js
+          node tests/test_motion_library.js
+          node tests/test_frame_clock.js
+      - name: Stamp Command Center build version
+        run: python tools/stamp_build.py "2.1.${{ github.run_number }}"
+      - name: Compile Windows executable
+        shell: pwsh
+        run: |
+          python -m PyInstaller --noconfirm --clean --onefile --windowed --version-file installer/version_info.txt --name "SheldonTwitching - Command Center" --add-data "web;web" --add-data "assets;assets" --add-data "scenes;scenes" --add-data "arcade;arcade" --add-data "streamlabs-tip-goal;streamlabs-tip-goal" --collect-all webview --collect-all pystray --collect-all tzdata --icon "assets\ST-Command-Center.ico" app.py
+      - name: Smoke test packaged Windows bridge and artwork
+        run: python tests/smoke_windows_exe.py "dist/SheldonTwitching - Command Center.exe"
+      - name: Install Inno Setup compiler
+        run: choco install innosetup --no-progress -y
+      - name: Build per-user upgrade installer and checksums
+        shell: pwsh
+        run: |
+          $iscc = (Get-ChildItem "${env:ProgramFiles(x86)}\Inno Setup *\ISCC.exe" | Sort-Object FullName -Descending | Select-Object -First 1).FullName
+          if (-not $iscc) { throw "Inno Setup compiler was not found" }
+          & $iscc "/DAppBuildVersion=2.1.${{ github.run_number }}" installer/CommandCenter.iss
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Get-ChildItem dist/*.exe | Get-FileHash -Algorithm SHA256 | ForEach-Object { "$($_.Hash)  $(Split-Path $_.Path -Leaf)" } | Set-Content dist/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SheldonTwitching-Command-Center-Windows
+          path: |
+            dist/SheldonTwitching - Command Center.exe
+            dist/SheldonTwitching-Command-Center-Setup-*.exe
+            dist/SHA256SUMS.txt
+          if-no-files-found: error

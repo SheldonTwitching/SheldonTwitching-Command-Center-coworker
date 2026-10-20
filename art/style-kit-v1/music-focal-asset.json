@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "assetId": "rooftop-music-ST-sign",
+  "stageId": "rooftop",
+  "required": true,
+  "status": "authoring-required-not-yet-runtime-wired",
+  "preferredLogo": "references/brand/ST-monogram-original.png",
+  "alternativeLogo": "references/brand/SheldonTwitching-full-logo-original.png",
+  "placement": {
+    "status": "proposed-review-before-authoring",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "anchor": [
+      225,
+      540
+    ],
+    "maxBounds": [
+      80,
+      400,
+      280,
+      250
+    ],
+    "outsideFightSafeRegion": true
+  },
+  "layers": [
+    "mount_contact_shadow",
+    "unlit_housing",
+    "clipped_panel_paint",
+    "clean_trim",
+    "logo_original",
+    "logo_emission",
+    "panel_emission",
+    "receiver_wall",
+    "receiver_equipment",
+    "receiver_floor",
+    "occlusion",
+    "wet_reflection"
+  ],
+  "audio": {
+    "source": "owner-selected-real-audio-source",
+    "suggestedAttackMs": 40,
+    "suggestedReleaseMs": 240,
+    "suggestedIdle": 0.08,
+    "suggestedPeak": 0.8,
+    "staleBehavior": "settle-to-idle",
+    "spectralData": "optional-only-when-measured",
+    "wholeScreenFlash": false
+  },
+  "acceptance": [
+    "Exact supplied logo, uniform proportions",
+    "Base readable with audio at zero",
+    "Light blocked by occlusion and bounded to receivers",
+    "Wet reflection only on declared wet surfaces",
+    "Real audio, silence, mute, reconnect and stale tested"
+  ]
+}

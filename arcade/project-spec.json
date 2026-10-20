@@ -1,0 +1,511 @@
+{
+  "schemaVersion": 1,
+  "product": "SheldonTwitching - Command Center",
+  "brand": {
+    "style": "Detailed pixel-art cyberpunk arcade with painted graffiti, glacier blue and violet accents",
+    "pixelRules": [
+      "Nearest-neighbor sampling",
+      "Crisp pixel clusters and dithered shading",
+      "No character-styled lower thirds",
+      "Fightsticks only",
+      "Preserve original PNG control silhouettes and pivots"
+    ],
+    "reusablePaintAtlas": "world/assets/cabinet1-paint-atlas-v1.png",
+    "approvedWordmark": "world/assets/logo-glacier-violet.png",
+    "logoRule": "Use the approved stacked master without relettering or flattening. Uniform scale; adapt surrounding paint, not glyph proportions."
+  },
+  "fonts": {
+    "operator": "Consolas, monospace",
+    "stageTitles": "world/modules/pixel-font.js bitmap glyphs",
+    "chat": [
+      "monospace",
+      "system-ui",
+      "Arial"
+    ],
+    "widget": "User selected label font; custom CSS stays authoritative"
+  },
+  "animation": {
+    "allowedFps": [
+      24,
+      30,
+      60
+    ],
+    "defaultFps": 30,
+    "loopRequired": true,
+    "policy": "Discrete time samples at selected fps. Existing pose atlases remain pose-based; frame cadence alone does not imply new hand-drawn frames.",
+    "lighting": [
+      "Separate emission, surface-receive, reflection and occluder masks",
+      "Fast attack, slower release; mute and stale source settle to zero",
+      "No whole-screen music flash",
+      "Static art cached; animate masks and bounded particles",
+      "Art-specific occluder masks pending for newly authored stages"
+    ]
+  },
+  "cabinet": {
+    "id": "original-fightstick-v1",
+    "nativeCanvas": [
+      2060,
+      1220
+    ],
+    "asset": {
+      "file": "CABINET.png",
+      "rect": [
+        59,
+        0,
+        1942,
+        1220
+      ]
+    },
+    "nativeGlass": [
+      403,
+      340,
+      1254,
+      646
+    ],
+    "sourceScreenCuts": {
+      "x": [
+        0,
+        403,
+        1657,
+        2060
+      ],
+      "y": [
+        300,
+        340,
+        986,
+        1220
+      ]
+    },
+    "gameplay": {
+      "canvas": [
+        1920,
+        1080
+      ],
+      "glass": [
+        197,
+        38,
+        1541,
+        868
+      ],
+      "margins": {
+        "left": 197,
+        "right": 182,
+        "top": 38,
+        "bottom": 174
+      },
+      "marqueeVisible": true,
+      "source": "Owner annotated OBS screenshot, 2026-10-19",
+      "targetCuts": {
+        "x": [
+          0,
+          197,
+          1738,
+          1920
+        ],
+        "y": [
+          0,
+          38,
+          906,
+          1124
+        ]
+      },
+      "controlScale": 1.2288676236044658,
+      "deckNativeY": 986,
+      "deckOutputY": 906,
+      "marqueeRect": [
+        197,
+        0,
+        1541,
+        38
+      ],
+      "marqueeNote": "Owner requested logo/splash header after aperture definition; reserved top 38 px preserves measured glass exactly.",
+      "deckScaleY": 0.9316239316239316,
+      "controlRule": "Map shaft pivots and button centers through the panel projection. Draw each original sprite uniformly at glass-width scale; never squash the ball or plungers."
+    },
+    "buttons": [
+      [
+        1139,
+        1053
+      ],
+      [
+        1219,
+        1049
+      ],
+      [
+        1299,
+        1049
+      ],
+      [
+        1379,
+        1053
+      ],
+      [
+        1113,
+        1093
+      ],
+      [
+        1193,
+        1089
+      ],
+      [
+        1273,
+        1089
+      ],
+      [
+        1353,
+        1093
+      ],
+      [
+        1475,
+        1083
+      ]
+    ],
+    "joystickPivot": [
+      891,
+      1115
+    ],
+    "arrows": {
+      "UP": [
+        870,
+        1062
+      ],
+      "DOWN": [
+        870,
+        1140
+      ],
+      "LEFT": [
+        818,
+        1096
+      ],
+      "RIGHT": [
+        922,
+        1096
+      ]
+    },
+    "layersBackToFront": [
+      "cabinet",
+      "marquee",
+      "lighting",
+      "reflection",
+      "arrows",
+      "buttons",
+      "widgets",
+      "events",
+      "joystick"
+    ],
+    "input": "Native XInput, nine independent mappings, opposing directions cancel, no input injection",
+    "structureRule": "All new cabinet compositions use this asset/parts definition. Existing painted room cabinet is a legacy perspective asset pending replacement; do not claim it is this rig.",
+    "structureFile": "cabinet-structure.json"
+  },
+  "weather": {
+    "location": "Bangor, Maine USA 04401",
+    "timezone": "America/New_York",
+    "sources": [
+      "Open-Meteo",
+      "manual override"
+    ]
+  },
+  "scenes": {
+    "intro": {
+      "features": [
+        "logo reveal",
+        "arcade room"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "ST wall graffiti and logo"
+    },
+    "starting": {
+      "features": [
+        "looping room",
+        "team fights",
+        "music marquees",
+        "weather stages"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "ST wall graffiti"
+    },
+    "brb": {
+      "features": [
+        "shared full-screen stage",
+        "weather/time",
+        "music-reactive fixture",
+        "BRB title"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "ST neon fixture with local wall spill and floor reflection"
+    },
+    "gameplay": {
+      "features": [
+        "measured transparent glass",
+        "shared PNG cabinet",
+        "live inputs",
+        "reflections"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "Cabinet trim and logo splash"
+    },
+    "chatting": {
+      "features": [
+        "camera aperture",
+        "chat",
+        "animated stage"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "ST neon fixture with local wall spill and floor reflection"
+    },
+    "ending": {
+      "features": [
+        "looping credits",
+        "animated stage"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "ST neon fixture with local wall spill and floor reflection"
+    },
+    "background": {
+      "features": [
+        "full-screen animated stage"
+      ],
+      "formats": [
+        "landscape",
+        "vertical"
+      ],
+      "focalMusicItem": "ST neon fixture with local wall spill and floor reflection"
+    }
+  },
+  "chatPlatforms": {
+    "twitch": "Daigotron adapter ingress",
+    "youtube": "Platform-tagged ingress supported; account adapter pending",
+    "tiktok": "Platform-tagged ingress supported; account adapter pending",
+    "twitter": "Platform-tagged ingress supported; account adapter pending"
+  },
+  "sources": [
+    {
+      "title": "Rotating labels",
+      "url": "/overlay",
+      "width": 900,
+      "height": 180,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "Now Playing",
+      "url": "/now-playing",
+      "width": 570,
+      "height": 115,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "Unified chat",
+      "url": "/studio/chat",
+      "width": 900,
+      "height": 600,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "Text reader",
+      "url": "/studio/text",
+      "width": 900,
+      "height": 180,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "Full native cabinet",
+      "url": "/arcade/overlay",
+      "width": 2060,
+      "height": 1220,
+      "kind": "cabinet",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay all",
+      "url": "/studio/parts/all",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay cabinet",
+      "url": "/studio/parts/cabinet",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay buttons",
+      "url": "/studio/parts/buttons",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay joystick",
+      "url": "/studio/parts/joystick",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay arrows",
+      "url": "/studio/parts/arrows",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay lighting",
+      "url": "/studio/parts/lighting",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay reflection",
+      "url": "/studio/parts/reflection",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Intro scene",
+      "url": "/studio/scene?scene=intro",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Starting scene",
+      "url": "/studio/scene?scene=starting",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Brb scene",
+      "url": "/studio/scene?scene=brb",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay scene",
+      "url": "/studio/scene?scene=gameplay",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Chatting scene",
+      "url": "/studio/scene?scene=chatting",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Ending scene",
+      "url": "/studio/scene?scene=ending",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Background scene",
+      "url": "/studio/scene?scene=background",
+      "width": 1920,
+      "height": 1080,
+      "kind": "scene",
+      "transparent": true
+    },
+    {
+      "title": "Native marquee",
+      "url": "/arcade/overlay?part=marquee",
+      "width": 2060,
+      "height": 1220,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Gameplay marquee",
+      "url": "/studio/parts/marquee",
+      "width": 1920,
+      "height": 1080,
+      "kind": "layer",
+      "transparent": true
+    },
+    {
+      "title": "Twitch chat feed",
+      "url": "/studio/chat?platform=twitch",
+      "width": 900,
+      "height": 600,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "YouTube chat feed",
+      "url": "/studio/chat?platform=youtube",
+      "width": 900,
+      "height": 600,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "TikTok chat feed",
+      "url": "/studio/chat?platform=tiktok",
+      "width": 900,
+      "height": 600,
+      "kind": "widget",
+      "transparent": true
+    },
+    {
+      "title": "Twitter / X chat feed",
+      "url": "/studio/chat?platform=twitter",
+      "width": 900,
+      "height": 600,
+      "kind": "widget",
+      "transparent": true
+    }
+  ],
+  "openingGame": {
+    "targetStageCount": 6,
+    "stageRegistry": "/arcade/stage-registry.json",
+    "rule": "Only stages with ready art enter live rotation. Broadcast scenes are separate from fighting stages."
+  },
+  "labelSources": {
+    "pattern": "/overlay?label={id}",
+    "registry": "/api/project items",
+    "dimensions": "Current label project canvas; styles and source bindings are shared with the editor"
+  }
+}

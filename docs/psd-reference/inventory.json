@@ -1,0 +1,2762 @@
+{
+  "source": {
+    "name": "ArcadeCabinet_FINAL - Beta.psd",
+    "sha256": "a291727795690c2633f0b48388ed9fab296655ae0ef39271f1efc3b8fda4310e",
+    "bytes": 39500364
+  },
+  "documents": [
+    {
+      "id": "root",
+      "size": [
+        2060,
+        1220
+      ],
+      "depth": 8,
+      "colorMode": "3",
+      "layers": [
+        {
+          "path": "/0:BG",
+          "name": "BG",
+          "kind": "group",
+          "bounds": [
+            0,
+            0,
+            2060,
+            1220
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.PASS_THROUGH",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 171,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D45C9770>"
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/0:BG/0:BG",
+          "name": "BG",
+          "kind": "pixel",
+          "bounds": [
+            0,
+            0,
+            2060,
+            1220
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 133,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/0:BG/1:BG FX",
+          "name": "BG FX",
+          "kind": "pixel",
+          "bounds": [
+            0,
+            0,
+            2060,
+            1220
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 113,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/0:BG/2:SCREEN",
+          "name": "SCREEN",
+          "kind": "pixel",
+          "bounds": [
+            345,
+            229,
+            1723,
+            1035
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 198,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/0:BG/3:SCREEN",
+          "name": "SCREEN",
+          "kind": "pixel",
+          "bounds": [
+            403,
+            308,
+            1662,
+            1016
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 196,
+            "LaSt": [
+              {
+                "enab": false,
+                "FXRf": {
+                  "Hrzn": 357.0189107759244,
+                  "Vrtc": 261.64643301518754
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/1:CABINET",
+          "name": "CABINET",
+          "kind": "group",
+          "bounds": [
+            0,
+            -35,
+            2060,
+            1224
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.PASS_THROUGH",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 145,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D45F2800>"
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/1:CABINET/0:CABINET",
+          "name": "CABINET",
+          "kind": "pixel",
+          "bounds": [
+            60,
+            0,
+            2002,
+            1224
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 150,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/1:CABINET/1:FX",
+          "name": "FX",
+          "kind": "pixel",
+          "bounds": [
+            16,
+            0,
+            2046,
+            1220
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 117,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/1:CABINET/2:LOGO",
+          "name": "LOGO",
+          "kind": "group",
+          "bounds": [
+            0,
+            -35,
+            2060,
+            1220
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.PASS_THROUGH",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 143,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D45F20D0>"
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/1:CABINET/2:LOGO/0:LOGO",
+          "name": "LOGO",
+          "kind": "smartobject",
+          "bounds": [
+            0,
+            0,
+            2060,
+            1220
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 121,
+            "LaSt": [
+              {
+                "enab": true,
+                "FXRf": {
+                  "Hrzn": 636.3398030048858,
+                  "Vrtc": 24.211301941759146
+                },
+                "LSpc": {
+                  "placedLayerSettings": {
+                    "placedLayerCompID": -1
+                  }
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          },
+          "smartObject": {
+            "name": "Layer 39.psb",
+            "kind": "data",
+            "fileType": "8bpb",
+            "bytes": 14657148,
+            "sha256": "5b0f4eedd0d94bd5fd8f5a1cf472381447b61e07af6d3cdcd94da9e12e34ddf6"
+          }
+        },
+        {
+          "path": "/1:CABINET/2:LOGO/1:LIGHT",
+          "name": "LIGHT",
+          "kind": "pixel",
+          "bounds": [
+            664,
+            -35,
+            1499,
+            415
+          ],
+          "visible": true,
+          "opacity": 179,
+          "blendMode": "BlendMode.HARD_LIGHT",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 147,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Opct": 70.19607843137256,
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D45F1220>"
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/1:CABINET/2:LOGO/2:LIGHT_2",
+          "name": "LIGHT_2",
+          "kind": "pixel",
+          "bounds": [
+            664,
+            -35,
+            1499,
+            415
+          ],
+          "visible": false,
+          "opacity": 51,
+          "blendMode": "BlendMode.HARD_LIGHT",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 207,
+            "LaSt": [
+              {
+                "enab": false,
+                "blendOptions": {
+                  "Opct": 20.0,
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D45F1A40>"
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/2:ARROWS",
+          "name": "ARROWS",
+          "kind": "group",
+          "bounds": [
+            926,
+            1090,
+            970,
+            1132
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.PASS_THROUGH",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 156,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D46152C0>"
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/2:ARROWS/0:ARROW_R",
+          "name": "ARROW_R",
+          "kind": "pixel",
+          "bounds": [
+            926,
+            1090,
+            970,
+            1132
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 152,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/2:ARROWS/1:ARROW_L",
+          "name": "ARROW_L",
+          "kind": "pixel",
+          "bounds": [
+            814,
+            1090,
+            858,
+            1132
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 153,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/2:ARROWS/2:ARROW_DOWN",
+          "name": "ARROW_DOWN",
+          "kind": "pixel",
+          "bounds": [
+            870,
+            1132,
+            914,
+            1178
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 154,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/2:ARROWS/3:ARROW_UP",
+          "name": "ARROW_UP",
+          "kind": "pixel",
+          "bounds": [
+            870,
+            1056,
+            914,
+            1098
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 155,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL",
+          "name": "BALL",
+          "kind": "group",
+          "bounds": [
+            878,
+            964,
+            1014,
+            1142
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.PASS_THROUGH",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 168,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D4636530>"
+                },
+                "FXRf": {
+                  "Hrzn": 106.0,
+                  "Vrtc": -217.0
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/0:RIGHT",
+          "name": "RIGHT",
+          "kind": "pixel",
+          "bounds": [
+            878,
+            964,
+            1014,
+            1142
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 159,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/1:LEFT",
+          "name": "LEFT",
+          "kind": "pixel",
+          "bounds": [
+            770,
+            964,
+            906,
+            1142
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 160,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/2:NEUTRAL",
+          "name": "NEUTRAL",
+          "kind": "pixel",
+          "bounds": [
+            842,
+            942,
+            942,
+            1146
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 161,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/3:FRONT",
+          "name": "FRONT",
+          "kind": "pixel",
+          "bounds": [
+            842,
+            968,
+            942,
+            1172
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 162,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/4:FRONT_LEFT",
+          "name": "FRONT_LEFT",
+          "kind": "pixel",
+          "bounds": [
+            780,
+            980,
+            906,
+            1148
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 163,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/5:FRONT_RIGHT",
+          "name": "FRONT_RIGHT",
+          "kind": "pixel",
+          "bounds": [
+            878,
+            980,
+            1004,
+            1148
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 164,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/6:BACK",
+          "name": "BACK",
+          "kind": "pixel",
+          "bounds": [
+            842,
+            958,
+            942,
+            1116
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 165,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/7:BACK_LEFT",
+          "name": "BACK_LEFT",
+          "kind": "pixel",
+          "bounds": [
+            782,
+            976,
+            906,
+            1116
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 166,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/3:BALL/8:BACK_RIGHT",
+          "name": "BACK_RIGHT",
+          "kind": "pixel",
+          "bounds": [
+            878,
+            978,
+            1002,
+            1116
+          ],
+          "visible": false,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 167,
+            "LaSt": [
+              {
+                "enab": false,
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/4:BUTTON",
+          "name": "BUTTON",
+          "kind": "group",
+          "bounds": [
+            1113,
+            1049,
+            1553,
+            1159
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.PASS_THROUGH",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 178,
+            "LaSt": [
+              {
+                "enab": true,
+                "blendOptions": {
+                  "Md  ": "<psd_tools.psd.descriptor.Enumerated object at 0x00000154D4674960>"
+                },
+                "FXRf": {
+                  "Hrzn": 63.0,
+                  "Vrtc": 47.0
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/4:BUTTON/0:BUTTON_AREA",
+          "name": "BUTTON_AREA",
+          "kind": "pixel",
+          "bounds": [
+            1139,
+            1049,
+            1553,
+            1159
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 186,
+            "LaSt": [
+              {
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/4:BUTTON/1:BUTTON_PRESSED",
+          "name": "BUTTON_PRESSED",
+          "kind": "pixel",
+          "bounds": [
+            1113,
+            1099,
+            1191,
+            1159
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 176,
+            "LaSt": [
+              {
+                "enab": true,
+                "FXRf": {
+                  "Hrzn": 63.0,
+                  "Vrtc": 47.0
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "path": "/4:BUTTON/2:BUTTON_NEUTRAL",
+          "name": "BUTTON_NEUTRAL",
+          "kind": "pixel",
+          "bounds": [
+            1113,
+            1093,
+            1191,
+            1159
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "frameStates": {
+            "LaID": 177,
+            "LaSt": [
+              {
+                "enab": true,
+                "FXRf": {
+                  "Hrzn": 63.0,
+                  "Vrtc": 47.0
+                },
+                "FrLs": [
+                  1454727078
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2024138894
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2031281869
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2035197900
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2039097124
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2041214806
+                ]
+              },
+              {
+                "enab": true,
+                "FrLs": [
+                  2043534172
+                ]
+              },
+              {
+                "enab": false,
+                "FrLs": [
+                  2047399782
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "root/1:CABINET/2:LOGO/0:LOGO",
+      "size": [
+        2445,
+        1067
+      ],
+      "depth": 8,
+      "colorMode": "3",
+      "layers": [
+        {
+          "path": "/0:Layer 39 copy",
+          "name": "Layer 39 copy",
+          "kind": "pixel",
+          "bounds": [
+            2029,
+            18,
+            2422,
+            446
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [
+            {
+              "type": "ColorOverlay",
+              "enabled": true
+            }
+          ]
+        },
+        {
+          "path": "/1:Layer 40",
+          "name": "Layer 40",
+          "kind": "pixel",
+          "bounds": [
+            2115,
+            325,
+            2414,
+            428
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/2:FINAL",
+          "name": "FINAL",
+          "kind": "smartobject",
+          "bounds": [
+            0,
+            119,
+            2445,
+            1067
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [],
+          "smartObject": {
+            "name": "light copy.psb",
+            "kind": "data",
+            "fileType": "8bpb",
+            "bytes": 12754500,
+            "sha256": "1343067f09165903605851980fe391a2442aa6252c8aaf09d37bf7a5fc2a6537"
+          }
+        },
+        {
+          "path": "/3:Layer 39",
+          "name": "Layer 39",
+          "kind": "pixel",
+          "bounds": [
+            2029,
+            0,
+            2422,
+            386
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/4:Layer 41",
+          "name": "Layer 41",
+          "kind": "pixel",
+          "bounds": [
+            2251,
+            13,
+            2392,
+            157
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "root/1:CABINET/2:LOGO/0:LOGO/2:FINAL",
+      "size": [
+        2445,
+        948
+      ],
+      "depth": 8,
+      "colorMode": "3",
+      "layers": [
+        {
+          "path": "/0:Layer 37 copy 3",
+          "name": "Layer 37 copy 3",
+          "kind": "smartobject",
+          "bounds": [
+            0,
+            28,
+            2445,
+            948
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": [
+            {
+              "type": "ColorOverlay",
+              "enabled": true
+            }
+          ],
+          "smartObject": {
+            "name": "Layer 37 copy 2.psb",
+            "kind": "data",
+            "fileType": "8bpb",
+            "bytes": 5781756,
+            "sha256": "b022efd8dc8577987c8b2869ceeba75118579302aab7c1676fa56113f194b35a"
+          }
+        },
+        {
+          "path": "/1:Layer 32 copy",
+          "name": "Layer 32 copy",
+          "kind": "pixel",
+          "bounds": [
+            22,
+            20,
+            2417,
+            907
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/2:Layer 33 copy",
+          "name": "Layer 33 copy",
+          "kind": "pixel",
+          "bounds": [
+            58,
+            20,
+            2417,
+            564
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/3:Layer 35 copy",
+          "name": "Layer 35 copy",
+          "kind": "pixel",
+          "bounds": [
+            22,
+            20,
+            2418,
+            907
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": true,
+          "effects": [],
+          "maskBounds": [
+            -428,
+            47,
+            2881,
+            2002
+          ]
+        },
+        {
+          "path": "/4:Layer 31 copy",
+          "name": "Layer 31 copy",
+          "kind": "pixel",
+          "bounds": [
+            0,
+            0,
+            2445,
+            920
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/5:light copy",
+          "name": "light copy",
+          "kind": "pixel",
+          "bounds": [
+            29,
+            200,
+            2399,
+            685
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "root/1:CABINET/2:LOGO/0:LOGO/2:FINAL/0:Layer 37 copy 3",
+      "size": [
+        2445,
+        920
+      ],
+      "depth": 8,
+      "colorMode": "3",
+      "layers": [
+        {
+          "path": "/0:Layer 32 copy",
+          "name": "Layer 32 copy",
+          "kind": "pixel",
+          "bounds": [
+            22,
+            20,
+            2417,
+            907
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/1:Layer 33 copy",
+          "name": "Layer 33 copy",
+          "kind": "pixel",
+          "bounds": [
+            58,
+            20,
+            2417,
+            564
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/2:Layer 35 copy",
+          "name": "Layer 35 copy",
+          "kind": "pixel",
+          "bounds": [
+            22,
+            20,
+            2418,
+            907
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": true,
+          "effects": [],
+          "maskBounds": [
+            -428,
+            290,
+            2881,
+            2031
+          ]
+        },
+        {
+          "path": "/3:Layer 31 copy",
+          "name": "Layer 31 copy",
+          "kind": "pixel",
+          "bounds": [
+            0,
+            0,
+            2445,
+            920
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        },
+        {
+          "path": "/4:Layer 37 copy 2",
+          "name": "Layer 37 copy 2",
+          "kind": "pixel",
+          "bounds": [
+            29,
+            200,
+            2399,
+            685
+          ],
+          "visible": true,
+          "opacity": 255,
+          "blendMode": "BlendMode.NORMAL",
+          "mask": false,
+          "effects": []
+        }
+      ]
+    }
+  ],
+  "assetComparisons": [
+    {
+      "layer": "/1:CABINET/0:CABINET",
+      "asset": "CABINET.png",
+      "sourceSize": [
+        1942,
+        1224
+      ],
+      "assetSize": [
+        1942,
+        1220
+      ],
+      "sameRGBA": false,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/1:CABINET/1:FX",
+      "asset": "FX.png",
+      "sourceSize": [
+        2030,
+        1220
+      ],
+      "assetSize": [
+        2030,
+        1220
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/2:ARROWS/0:ARROW_R",
+      "asset": "ARROW_R.png",
+      "sourceSize": [
+        44,
+        42
+      ],
+      "assetSize": [
+        44,
+        42
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/2:ARROWS/1:ARROW_L",
+      "asset": "ARROW_L.png",
+      "sourceSize": [
+        44,
+        42
+      ],
+      "assetSize": [
+        44,
+        42
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/2:ARROWS/2:ARROW_DOWN",
+      "asset": "ARROW_DOWN.png",
+      "sourceSize": [
+        44,
+        46
+      ],
+      "assetSize": [
+        44,
+        46
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/2:ARROWS/3:ARROW_UP",
+      "asset": "ARROW_UP.png",
+      "sourceSize": [
+        44,
+        42
+      ],
+      "assetSize": [
+        44,
+        42
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/0:RIGHT",
+      "asset": "RIGHT.png",
+      "sourceSize": [
+        136,
+        178
+      ],
+      "assetSize": [
+        136,
+        178
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/1:LEFT",
+      "asset": "LEFT.png",
+      "sourceSize": [
+        136,
+        178
+      ],
+      "assetSize": [
+        136,
+        178
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/2:NEUTRAL",
+      "asset": "NEUTRAL.png",
+      "sourceSize": [
+        100,
+        204
+      ],
+      "assetSize": [
+        100,
+        204
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/3:FRONT",
+      "asset": "FRONT.png",
+      "sourceSize": [
+        100,
+        204
+      ],
+      "assetSize": [
+        100,
+        204
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/4:FRONT_LEFT",
+      "asset": "FRONT_LEFT.png",
+      "sourceSize": [
+        126,
+        168
+      ],
+      "assetSize": [
+        126,
+        168
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/5:FRONT_RIGHT",
+      "asset": "FRONT_RIGHT.png",
+      "sourceSize": [
+        126,
+        168
+      ],
+      "assetSize": [
+        126,
+        168
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/6:BACK",
+      "asset": "BACK.png",
+      "sourceSize": [
+        100,
+        158
+      ],
+      "assetSize": [
+        100,
+        158
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/7:BACK_LEFT",
+      "asset": "BACK_LEFT.png",
+      "sourceSize": [
+        124,
+        140
+      ],
+      "assetSize": [
+        124,
+        140
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/3:BALL/8:BACK_RIGHT",
+      "asset": "BACK_RIGHT.png",
+      "sourceSize": [
+        124,
+        138
+      ],
+      "assetSize": [
+        124,
+        138
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/4:BUTTON/0:BUTTON_AREA",
+      "asset": "BUTTON_AREA.png",
+      "sourceSize": [
+        414,
+        110
+      ],
+      "assetSize": [
+        440,
+        110
+      ],
+      "sameRGBA": false,
+      "sameTopLeftOverlap": false
+    },
+    {
+      "layer": "/4:BUTTON/1:BUTTON_PRESSED",
+      "asset": "BUTTON_PRESSED.png",
+      "sourceSize": [
+        78,
+        60
+      ],
+      "assetSize": [
+        78,
+        60
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    },
+    {
+      "layer": "/4:BUTTON/2:BUTTON_NEUTRAL",
+      "asset": "BUTTON_NEUTRAL.png",
+      "sourceSize": [
+        78,
+        66
+      ],
+      "assetSize": [
+        78,
+        66
+      ],
+      "sameRGBA": true,
+      "sameTopLeftOverlap": true
+    }
+  ],
+  "animation": {
+    "AFSt": 0,
+    "FrIn": [
+      {
+        "FrID": 1454727078,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2024138894,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2031281869,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2035197900,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2039097124,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2041214806,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2043534172,
+        "FrGA": 90.0
+      },
+      {
+        "FrID": 2047399782,
+        "FrGA": 90.0
+      }
+    ],
+    "FSts": [
+      {
+        "FsID": 0,
+        "AFrm": 6,
+        "FsFr": [
+          1454727078,
+          2024138894,
+          2031281869,
+          2035197900,
+          2039097124,
+          2041214806,
+          2043534172,
+          2047399782
+        ],
+        "LCnt": 0
+      }
+    ]
+  },
+  "decodedAnimation": {
+    "frames": [
+      {
+        "index": 0,
+        "id": 1454727078,
+        "ball": [
+          "FRONT"
+        ],
+        "arrows": [
+          "ARROW_DOWN"
+        ]
+      },
+      {
+        "index": 1,
+        "id": 2024138894,
+        "ball": [
+          "FRONT_LEFT"
+        ],
+        "arrows": [
+          "ARROW_L",
+          "ARROW_DOWN"
+        ]
+      },
+      {
+        "index": 2,
+        "id": 2031281869,
+        "ball": [
+          "LEFT"
+        ],
+        "arrows": [
+          "ARROW_L"
+        ]
+      },
+      {
+        "index": 3,
+        "id": 2035197900,
+        "ball": [
+          "BACK_LEFT"
+        ],
+        "arrows": [
+          "ARROW_L",
+          "ARROW_UP"
+        ]
+      },
+      {
+        "index": 4,
+        "id": 2039097124,
+        "ball": [
+          "BACK"
+        ],
+        "arrows": [
+          "ARROW_UP"
+        ]
+      },
+      {
+        "index": 5,
+        "id": 2041214806,
+        "ball": [
+          "BACK_RIGHT"
+        ],
+        "arrows": [
+          "ARROW_R",
+          "ARROW_UP"
+        ]
+      },
+      {
+        "index": 6,
+        "id": 2043534172,
+        "ball": [
+          "RIGHT"
+        ],
+        "arrows": [
+          "ARROW_R"
+        ]
+      },
+      {
+        "index": 7,
+        "id": 2047399782,
+        "ball": [
+          "FRONT_RIGHT"
+        ],
+        "arrows": [
+          "ARROW_R",
+          "ARROW_DOWN"
+        ]
+      }
+    ],
+    "selectedFrameIndex": 6,
+    "selectedFrameMatchesSavedVisibility": true,
+    "interpretation": "Visibility state deltas; omitted initial enable assumed true and checked against the selected frame.",
+    "timing": "No per-frame delay field in recovered FrIn; do not infer fps from FrGA."
+  },
+  "globalLightDefaults": {
+    "angle": 90,
+    "altitude": 30,
+    "caution": "Document defaults, not evidence of the baked sphere lighting direction."
+  },
+  "sourceUnchanged": true
+}

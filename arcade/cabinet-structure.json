@@ -1,0 +1,1761 @@
+{
+  "schemaVersion": 1,
+  "nativeCanvas": [
+    2060,
+    1220
+  ],
+  "protectedAperture": {
+    "native": [
+      403,
+      340,
+      1254,
+      646
+    ],
+    "gameplay": [
+      197,
+      38,
+      1541,
+      868
+    ],
+    "policy": "Always transparent; bevels, alternate shells and glow must grow outward. Controls retain uniform scale."
+  },
+  "styleRules": [
+    "Detailed pixel clusters and dithered physical depth",
+    "Nearest-neighbor sampling",
+    "Preserve approved source sprites and pivots",
+    "Approved logo proportions remain intact; paint composition fits around the mark",
+    "No straight neon bars in Cabinet 1 marquee",
+    "Original preset preserves owner original artwork"
+  ],
+  "geometry": {
+    "shapes": [
+      "original",
+      "square",
+      "chamfered"
+    ],
+    "profiles": [
+      "flat",
+      "beveled",
+      "rounded"
+    ],
+    "edgeWidth": {
+      "min": 2,
+      "max": 22,
+      "default": 8
+    },
+    "bezelWidth": {
+      "min": 4,
+      "max": 110,
+      "default": 60
+    },
+    "logoScale": {
+      "min": 0.65,
+      "max": 1,
+      "default": 0.97
+    }
+  },
+  "paintAtlas": {
+    "file": "cabinet1-paint-atlas-v1.png",
+    "bands": {
+      "marquee": [
+        0,
+        0,
+        1,
+        0.365
+      ],
+      "deck": [
+        0,
+        0.38,
+        1,
+        0.25
+      ],
+      "sides": [
+        0,
+        0.65,
+        1,
+        0.35
+      ],
+      "shoulders": [
+        0,
+        0,
+        0.4,
+        0.365
+      ]
+    }
+  },
+  "parts": [
+    {
+      "id": "shell",
+      "label": "Cabinet shell",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [
+        "shape"
+      ],
+      "notes": "Native outline, shoulder and depth are baked; alternative shapes are constructed frame overlays."
+    },
+    {
+      "id": "sides",
+      "label": "Side cheeks & shoulder returns",
+      "source": "CABINET.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [
+        "color",
+        "opacity",
+        "paint"
+      ],
+      "notes": "",
+      "polygon": [
+        [
+          59,
+          270
+        ],
+        [
+          261,
+          270
+        ],
+        [
+          379,
+          1034
+        ],
+        [
+          105,
+          1219
+        ],
+        [
+          0,
+          1219
+        ],
+        [
+          216,
+          986
+        ],
+        [
+          216,
+          450
+        ]
+      ]
+    },
+    {
+      "id": "edge",
+      "label": "Outer trim / T-molding",
+      "source": "FX.png",
+      "capability": "overlay",
+      "lightingRole": "emitter",
+      "controls": [
+        "color",
+        "opacity",
+        "glow",
+        "width",
+        "profile"
+      ],
+      "notes": "Original trim gets an alpha/shading-preserving color mask. Paint exclusion expands by edgeGap; emission uses the same selected color."
+    },
+    {
+      "id": "seams",
+      "label": "Panel seams & miters",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Part of source pixels; independent replacement needs a new sprite or mask."
+    },
+    {
+      "id": "fasteners",
+      "label": "Deck screws / fasteners",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Retain original baked fasteners; no fabricated independent controls."
+    },
+    {
+      "id": "marqueeHousing",
+      "label": "Marquee housing & underside",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "marqueeFrame",
+      "label": "Marquee frame lip",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "marqueePaint",
+      "label": "Painted marquee face",
+      "source": "cabinet1-paint-atlas-v1.png",
+      "capability": "overlay",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity",
+        "paint"
+      ],
+      "notes": "Shared painted surface for cabinet, room brand and future stingers."
+    },
+    {
+      "id": "logo",
+      "label": "SheldonTwitching lettering",
+      "source": "logo-glacier-violet.png",
+      "capability": "sprite",
+      "lightingRole": "emitter",
+      "controls": [
+        "opacity",
+        "glow",
+        "scale"
+      ],
+      "notes": "Approved stacked master. Uniform scale only; no ribbon conversion, horizontal stretching, or AI relettering."
+    },
+    {
+      "id": "marqueeGlass",
+      "label": "Marquee protective glass",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "reflector",
+      "controls": [],
+      "notes": "Glass highlights baked in original; a future independent glass mask is planned."
+    },
+    {
+      "id": "bezel",
+      "label": "Screen surround / recessed bevel",
+      "source": "CABINET.png",
+      "capability": "overlay",
+      "lightingRole": "receiver",
+      "controls": [
+        "shape",
+        "width",
+        "color",
+        "opacity"
+      ],
+      "notes": "Constructed shapes: width and opacity of the recessed frame. Original raster: optional color wash only; its geometry/shading stay baked."
+    },
+    {
+      "id": "screenLip",
+      "label": "Inner screen lip",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "glass",
+      "label": "Transparent game aperture",
+      "source": "project-spec.json",
+      "capability": "geometry",
+      "lightingRole": "reflector",
+      "controls": [],
+      "notes": "Native [403,340,1254,646]; gameplay [197,38,1541,868]. No inset based on alpha."
+    },
+    {
+      "id": "reflection",
+      "label": "Control reflection in glass",
+      "source": "sprites.js",
+      "capability": "overlay",
+      "lightingRole": "reflector",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Upright stick: BACK\u2194FRONT; NEUTRAL unchanged. Side and diagonal poses unchanged."
+    },
+    {
+      "id": "deck",
+      "label": "Sloped control deck & painted laminate",
+      "source": "CABINET.png + paint atlas",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [
+        "color",
+        "opacity",
+        "paint"
+      ],
+      "notes": "Reskin replaces the complete inlay faces, including their original stripe/glow print. Perimeter bevels, separators and controls stay intact.",
+      "polygon": [
+        [
+          370,
+          1056
+        ],
+        [
+          798,
+          1056
+        ],
+        [
+          716,
+          1195
+        ],
+        [
+          225,
+          1195
+        ]
+      ]
+    },
+    {
+      "id": "deckLip",
+      "label": "Front deck thickness & lip",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "deckSeams",
+      "label": "Control panel dividers",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "stickBall",
+      "label": "Joystick assembly \u00b7 ball / shaft",
+      "source": "9 source direction PNGs",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Opacity affects the assembled stick; native ball, shaft and shading stay intact. Independent ball color needs a separated ball mask."
+    },
+    {
+      "id": "stickShaft",
+      "label": "Joystick shaft",
+      "source": "9 source direction PNGs",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Pose pivots are shared in sprites.js; no vertical bitmap flip."
+    },
+    {
+      "id": "stickCollar",
+      "label": "Joystick collar / dust washer",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "stickMount",
+      "label": "Mount / direction plate",
+      "source": "CABINET.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": ""
+    },
+    {
+      "id": "stickShadow",
+      "label": "Joystick cast/contact shadow",
+      "source": "9 source direction PNGs",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Source sprite shadow; independent dynamic shadow requires new mask."
+    },
+    {
+      "id": "arrows",
+      "label": "Lever directional lights",
+      "source": "ARROW_*.png",
+      "capability": "sprite",
+      "lightingRole": "emitter",
+      "controls": [
+        "color",
+        "opacity",
+        "glow"
+      ],
+      "notes": "Independent color, opacity and glow for the lever direction indicators. Preserve source alpha silhouettes; real lever input mapping is unchanged."
+    },
+    {
+      "id": "button1",
+      "label": "Button 1 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button1.cap",
+      "label": "Button 1 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button1.rim",
+      "label": "Button 1 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button1.housing",
+      "label": "Button 1 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button1.highlight",
+      "label": "Button 1 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button1.shadow",
+      "label": "Button 1 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button2",
+      "label": "Button 2 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button2.cap",
+      "label": "Button 2 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button2.rim",
+      "label": "Button 2 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button2.housing",
+      "label": "Button 2 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button2.highlight",
+      "label": "Button 2 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button2.shadow",
+      "label": "Button 2 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button3",
+      "label": "Button 3 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button3.cap",
+      "label": "Button 3 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button3.rim",
+      "label": "Button 3 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button3.housing",
+      "label": "Button 3 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button3.highlight",
+      "label": "Button 3 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button3.shadow",
+      "label": "Button 3 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button4",
+      "label": "Button 4 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button4.cap",
+      "label": "Button 4 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button4.rim",
+      "label": "Button 4 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button4.housing",
+      "label": "Button 4 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button4.highlight",
+      "label": "Button 4 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button4.shadow",
+      "label": "Button 4 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button5",
+      "label": "Button 5 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button5.cap",
+      "label": "Button 5 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button5.rim",
+      "label": "Button 5 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button5.housing",
+      "label": "Button 5 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button5.highlight",
+      "label": "Button 5 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button5.shadow",
+      "label": "Button 5 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button6",
+      "label": "Button 6 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button6.cap",
+      "label": "Button 6 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button6.rim",
+      "label": "Button 6 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button6.housing",
+      "label": "Button 6 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button6.highlight",
+      "label": "Button 6 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button6.shadow",
+      "label": "Button 6 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button7",
+      "label": "Button 7 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button7.cap",
+      "label": "Button 7 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button7.rim",
+      "label": "Button 7 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button7.housing",
+      "label": "Button 7 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button7.highlight",
+      "label": "Button 7 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button7.shadow",
+      "label": "Button 7 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button8",
+      "label": "Button 8 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button8.cap",
+      "label": "Button 8 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button8.rim",
+      "label": "Button 8 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button8.housing",
+      "label": "Button 8 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button8.highlight",
+      "label": "Button 8 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button8.shadow",
+      "label": "Button 8 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button9",
+      "label": "Button 9 assembly",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "sprite",
+      "lightingRole": "receiver",
+      "controls": [
+        "opacity"
+      ],
+      "notes": "Independent binding, position, neutral/pressed replacement and press color in Controller editor."
+    },
+    {
+      "id": "button9.cap",
+      "label": "Button 9 cap face",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button9.rim",
+      "label": "Button 9 rim / cylindrical sidewall",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Source-alpha material region, independently colored in Button materials for neutral and pressed states; source shading and contact shadow retained. Not a detachable sprite."
+    },
+    {
+      "id": "button9.housing",
+      "label": "Button 9 socket / recess",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button9.highlight",
+      "label": "Button 9 cap highlight",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "receiver",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "button9.shadow",
+      "label": "Button 9 contact shadow",
+      "source": "BUTTON_NEUTRAL / BUTTON_PRESSED.png",
+      "capability": "baked",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Baked into the button sprite. Independent editing needs a separated sprite/mask; press travel comes from supplied pressed PNG."
+    },
+    {
+      "id": "buttonLight",
+      "label": "Button press illumination",
+      "source": "Runtime glow",
+      "capability": "overlay",
+      "lightingRole": "emitter",
+      "controls": [
+        "glow"
+      ],
+      "notes": "Per-button press color and strength already available in Controller editor."
+    },
+    {
+      "id": "coinDoor",
+      "label": "Coin door",
+      "source": "none",
+      "capability": "absent",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Outside the approved cropped artwork; do not invent in this cabinet preset."
+    },
+    {
+      "id": "grille",
+      "label": "Speaker grille",
+      "source": "none",
+      "capability": "absent",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Outside the approved cropped artwork; do not invent in this cabinet preset."
+    },
+    {
+      "id": "base",
+      "label": "Plinth / cabinet feet",
+      "source": "none",
+      "capability": "absent",
+      "lightingRole": "occluder",
+      "controls": [],
+      "notes": "Outside the approved cropped artwork; do not invent in this cabinet preset."
+    },
+    {
+      "id": "shoulderPaint",
+      "label": "Upper shoulders \u00b7 large paint splashes",
+      "source": "cabinet1-paint-atlas-v1.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [
+        "color",
+        "opacity",
+        "paint"
+      ],
+      "notes": "Large corner paint beneath the marquee; registered to the shoulder planes, clipped to shell alpha. Native seam/bevel shading remains above the paint.",
+      "polygon": [
+        [
+          205,
+          270
+        ],
+        [
+          535,
+          270
+        ],
+        [
+          490,
+          311
+        ],
+        [
+          373,
+          366
+        ],
+        [
+          351,
+          490
+        ],
+        [
+          286,
+          451
+        ]
+      ]
+    },
+    {
+      "id": "screenSurround",
+      "label": "Paint around the screen \u00b7 bridge / uprights / sill",
+      "source": "cabinet1-paint-atlas-v1.png",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [
+        "color",
+        "opacity",
+        "paint"
+      ],
+      "notes": "Four registered frame planes, oriented ink, preserved recess/bevel shading, inner lip excluded. Glass stays transparent."
+    },
+    {
+      "id": "innerReturns",
+      "label": "Inner upper sides \u00b7 left / right returns",
+      "source": "Registered material planes",
+      "capability": "region",
+      "lightingRole": "receiver",
+      "controls": [
+        "color",
+        "opacity",
+        "paint"
+      ],
+      "notes": "Independent material color and paint on both upper return faces. Receives the marquee overhang shadow."
+    }
+  ],
+  "presets": {
+    "original": {
+      "label": "Owner Original",
+      "description": "Unmodified owner shell, controls and original marquee; corrected upright stick reflection."
+    },
+    "cabinet1": {
+      "label": "Cabinet 1 \u00b7 Glacier Graffiti",
+      "description": "Owner structural depth with cyan/violet painted panels framing the approved stacked logo."
+    }
+  },
+  "lighting": {
+    "source": "Selected actual audio source from Studio audio state; Spotify metadata is not amplitude",
+    "emitter": "Bounded additive glow, follows shared audio attack/release",
+    "receiver": "Paint/material tint on registered surface only",
+    "occluder": "Source baked shading retained; new moving cast shadows require explicit masks",
+    "reflector": "Clipped to measured glass; upright reflection pose lookup only",
+    "marqueeOverhang": {
+      "source": "Physical overhang below marquee bottom at native y270",
+      "receivers": [
+        "innerReturns",
+        "shoulderPaint",
+        "screenSurround"
+      ],
+      "opacitySetting": "surfaceFinish.overhangShadow",
+      "reachSetting": "surfaceFinish.overhangReach",
+      "curve": "Linear receiver fade from strongest under lip to clear at reach; glass excluded."
+    }
+  },
+  "reflection": {
+    "poseMap": {
+      "BACK": "FRONT",
+      "FRONT": "BACK",
+      "NEUTRAL": "NEUTRAL"
+    },
+    "otherDirections": "unchanged",
+    "flipBitmap": false,
+    "mirrorMountPosition": false,
+    "includeButtons": false,
+    "includeArrows": false,
+    "placement": "Only the ball top enters the bottom edge of glass. Real controls remain at approved pivots.",
+    "visibleHeightNative": 10,
+    "defaultOpacity": 0.08,
+    "ballOpaqueTopNative": {
+      "NEUTRAL": 16,
+      "BACK": 8,
+      "BACK_LEFT": 8,
+      "BACK_RIGHT": 6,
+      "FRONT": 26,
+      "FRONT_LEFT": 26,
+      "FRONT_RIGHT": 26,
+      "LEFT": 12,
+      "RIGHT": 12
+    },
+    "sourceRule": "Crop pre-ball translucent sprite margins in reflection only; preserve original physical control sprite."
+  },
+  "futureVariables": [
+    "Independent ball gloss/shaft materials after source separation",
+    "Deck slope and thickness after reauthoring source geometry",
+    "Corner radius and shoulder profiles per new shell",
+    "Per-button cap/rim/socket masks",
+    "Marquee glass roughness and reflection masks",
+    "Full-body coin door/grille/base only in full-body styles"
+  ],
+  "logoContract": {
+    "asset": "world/assets/logo-glacier-violet.png",
+    "approvedLayout": "original stacked wordmark",
+    "allowNonuniformScale": false,
+    "allowRelettering": false,
+    "placement": "Centered, contained by native marquee height. Paint fills the remaining face; never flatten lettering to fill width."
+  },
+  "surfaceDetailRules": {
+    "required": [
+      "Every new shell retains or constructs panel thickness and return faces",
+      "Bezel must have outer bevel, recessed face, inner lip and protected clear aperture",
+      "Paint follows registered panel planes; never a plain outline around a flat fill",
+      "Shoulder corners below the marquee get broad composed splashes in painted styles",
+      "Seams, miters, fasteners and original contact shadows stay legible above painted laminate",
+      "Lighting emission is limited to trim/logo/light masks; receivers retain dark-side shading",
+      "Reflections exclude buttons/arrows; upright ball arc only, faint and at lower glass edge",
+      "Approved logo keeps original glyph proportions",
+      "A reskinned panel replaces its old printed graphics AND matching interior FX; never ghost old stripes through new art",
+      "Paint composition covers the upper bridge, both uprights and lower sill around glass, while preserving the inner lip and bevels",
+      "Mask paint away from trim using a configurable pixel gutter; restore original depth before applying one chosen trim color",
+      "Upper return faces have independent material color, painted coverage and an explicit marquee overhang shadow",
+      "Sphere light is fixed in scene coordinates and recomputed for every source pose; never rotate or duplicate baked highlights",
+      "Nine button accents are palette roles; cap and rim accept separate neutral/pressed overrides",
+      "Future shell shape concepts stay roadmap work until the current original silhouette is accepted"
+    ],
+    "renderOrder": [
+      "base material and shape",
+      "panel-bound paint",
+      "restored seams/bevel/contact detail",
+      "controls and bounded emissive FX"
+    ],
+    "pixelArt": "Sharp source pixels and dithered shading; no blur replacing physical detail",
+    "acceptance": "Compare original and painted native view, inspect shoulder corners and glass on a dark/checkerboard backdrop. Reject flat outline-only shell variants.",
+    "strictPixelArt": {
+      "required": true,
+      "controls": "Keep source pixel clusters, dithering, highlights, alpha and pose silhouettes. Palette remapping only; no procedural smooth sphere shading.",
+      "directionalLighting": "Saved settings retained; directional relighting pending authored pixel masks and owner review.",
+      "reference": "docs/command-center/PIXEL_ART_CONTRACT.md"
+    }
+  },
+  "panelSurfaces": {
+    "deck": [
+      {
+        "id": "left-inlay",
+        "polygon": [
+          [
+            349,
+            1063
+          ],
+          [
+            750,
+            1063
+          ],
+          [
+            689,
+            1178
+          ],
+          [
+            235,
+            1178
+          ]
+        ],
+        "band": "deck",
+        "rotation": 0,
+        "fasteners": [
+          [
+            350,
+            1067
+          ],
+          [
+            744,
+            1067
+          ],
+          [
+            244,
+            1172
+          ],
+          [
+            684,
+            1172
+          ]
+        ]
+      },
+      {
+        "id": "button-inlay",
+        "polygon": [
+          [
+            1034,
+            1063
+          ],
+          [
+            1709,
+            1063
+          ],
+          [
+            1824,
+            1178
+          ],
+          [
+            1086,
+            1178
+          ]
+        ],
+        "band": "deck",
+        "rotation": 0,
+        "fasteners": [
+          [
+            1040,
+            1067
+          ],
+          [
+            1706,
+            1067
+          ],
+          [
+            1090,
+            1172
+          ],
+          [
+            1815,
+            1172
+          ]
+        ]
+      }
+    ],
+    "screenSurround": [
+      {
+        "id": "upper-bridge",
+        "polygon": [
+          [
+            292,
+            276
+          ],
+          [
+            1768,
+            276
+          ],
+          [
+            1738,
+            325
+          ],
+          [
+            322,
+            325
+          ]
+        ],
+        "band": "deck",
+        "rotation": 0
+      },
+      {
+        "id": "left-upright",
+        "polygon": [
+          [
+            319,
+            326
+          ],
+          [
+            390,
+            338
+          ],
+          [
+            390,
+            982
+          ],
+          [
+            319,
+            1026
+          ]
+        ],
+        "band": "deck",
+        "rotation": 90
+      },
+      {
+        "id": "right-upright",
+        "polygon": [
+          [
+            1741,
+            326
+          ],
+          [
+            1670,
+            338
+          ],
+          [
+            1670,
+            982
+          ],
+          [
+            1741,
+            1026
+          ]
+        ],
+        "band": "deck",
+        "rotation": -90
+      },
+      {
+        "id": "lower-sill",
+        "polygon": [
+          [
+            322,
+            998
+          ],
+          [
+            1738,
+            998
+          ],
+          [
+            1755,
+            1032
+          ],
+          [
+            305,
+            1032
+          ]
+        ],
+        "band": "deck",
+        "rotation": 0
+      }
+    ],
+    "innerReturns": [
+      {
+        "id": "left-upper-return",
+        "polygon": [
+          [
+            188,
+            274
+          ],
+          [
+            263,
+            274
+          ],
+          [
+            351,
+            449
+          ],
+          [
+            302,
+            449
+          ]
+        ],
+        "band": "deck",
+        "rotation": 55
+      },
+      {
+        "id": "right-upper-return",
+        "polygon": [
+          [
+            1872,
+            274
+          ],
+          [
+            1797,
+            274
+          ],
+          [
+            1709,
+            449
+          ],
+          [
+            1758,
+            449
+          ]
+        ],
+        "band": "deck",
+        "rotation": -55
+      }
+    ],
+    "sideCheeks": [
+      {
+        "id": "left-cheek",
+        "polygon": [
+          [
+            295,
+            459
+          ],
+          [
+            316,
+            466
+          ],
+          [
+            316,
+            992
+          ],
+          [
+            103,
+            1188
+          ],
+          [
+            85,
+            1188
+          ],
+          [
+            294,
+            981
+          ]
+        ],
+        "band": "deck",
+        "rotation": 90
+      },
+      {
+        "id": "right-cheek",
+        "polygon": [
+          [
+            1765,
+            459
+          ],
+          [
+            1744,
+            466
+          ],
+          [
+            1744,
+            992
+          ],
+          [
+            1957,
+            1188
+          ],
+          [
+            1975,
+            1188
+          ],
+          [
+            1766,
+            981
+          ]
+        ],
+        "band": "deck",
+        "rotation": -90
+      }
+    ]
+  },
+  "deckReskin": {
+    "replaceFace": true,
+    "suppressOriginalFaceFx": true,
+    "preserve": [
+      "outer panel bevel",
+      "panel perimeter trim",
+      "divider seams",
+      "control positions and shadows"
+    ],
+    "replace": [
+      "old horizontal neon bars",
+      "old printed stripe pattern",
+      "old stripe glow inside inlays"
+    ],
+    "material": "Opaque new laminate base, paint atlas, restrained pixel grain, inset contact seam and mounting screws. Never restore old face pixels over a reskin."
+  },
+  "materialDefaults": {
+    "ballLighting": {
+      "enabled": true,
+      "color": "#c738cf",
+      "lightX": -0.65,
+      "lightY": -0.75,
+      "lightZ": 1.1,
+      "ambient": 0.24,
+      "intensity": 0.78,
+      "gloss": 0.32,
+      "followInput": true
+    },
+    "buttonSkin": {
+      "enabled": true,
+      "primaryCap": "#dc41d9",
+      "primaryRim": "#613b8b",
+      "secondaryCap": "#80d7ff",
+      "secondaryRim": "#365780",
+      "accentCap": "#9664ed",
+      "accentRim": "#443164",
+      "pressedCap": "#ddfaff",
+      "pressedRim": "#9664ed",
+      "roles": [
+        "primary",
+        "primary",
+        "secondary",
+        "secondary",
+        "primary",
+        "primary",
+        "secondary",
+        "secondary",
+        "accent"
+      ],
+      "overrides": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    },
+    "surfaceFinish": {
+      "edgeGap": 5,
+      "overhangShadow": 0.62,
+      "overhangReach": 130
+    },
+    "leverIndicators": {
+      "shape": "original",
+      "colors": {
+        "UP": "",
+        "DOWN": "",
+        "LEFT": "",
+        "RIGHT": ""
+      }
+    }
+  },
+  "controlGeometry": {
+    "button": {
+      "capEllipse": [
+        38,
+        21,
+        35.5,
+        21.5
+      ],
+      "shadowThreshold": 40,
+      "neutralSize": [
+        78,
+        66
+      ],
+      "pressedSize": [
+        78,
+        60
+      ],
+      "pressedTravel": 6,
+      "maskRule": "Analytic cap ellipse intersected with source alpha; rim is colored housing outside cap, source contact shadow retained."
+    },
+    "balls": {
+      "NEUTRAL": [
+        49.5,
+        65.5,
+        50
+      ],
+      "BACK": [
+        49.5,
+        57.5,
+        50
+      ],
+      "BACK_LEFT": [
+        53.5,
+        57.5,
+        50
+      ],
+      "BACK_RIGHT": [
+        69.5,
+        55.5,
+        50
+      ],
+      "FRONT": [
+        49.5,
+        75.5,
+        50
+      ],
+      "FRONT_LEFT": [
+        62.5,
+        75.5,
+        50
+      ],
+      "FRONT_RIGHT": [
+        62.5,
+        75.5,
+        50
+      ],
+      "LEFT": [
+        49.5,
+        61.5,
+        50
+      ],
+      "RIGHT": [
+        85.5,
+        61.5,
+        50
+      ]
+    },
+    "ballModel": "Source-palette remapping preserves the original per-pose pixel shading, dither, alpha, shaft and pivots. Smooth analytic sphere replacement is prohibited. Directional lighting settings are retained but inactive until authored pixel masks pass visual review.",
+    "arrowSizes": {
+      "UP": [
+        44,
+        42
+      ],
+      "DOWN": [
+        44,
+        46
+      ],
+      "LEFT": [
+        44,
+        42
+      ],
+      "RIGHT": [
+        44,
+        42
+      ]
+    }
+  },
+  "leverShapes": [
+    "original",
+    "arrow",
+    "chevron",
+    "diamond",
+    "round",
+    "pixel"
+  ],
+  "trimZones": [
+    [
+      [
+        65,
+        0
+      ],
+      [
+        200,
+        0
+      ],
+      [
+        226,
+        278
+      ],
+      [
+        330,
+        444
+      ],
+      [
+        330,
+        992
+      ],
+      [
+        108,
+        1220
+      ],
+      [
+        0,
+        1220
+      ],
+      [
+        267,
+        976
+      ],
+      [
+        267,
+        455
+      ],
+      [
+        155,
+        276
+      ]
+    ],
+    [
+      [
+        1995,
+        0
+      ],
+      [
+        1860,
+        0
+      ],
+      [
+        1834,
+        278
+      ],
+      [
+        1730,
+        444
+      ],
+      [
+        1730,
+        992
+      ],
+      [
+        1952,
+        1220
+      ],
+      [
+        2060,
+        1220
+      ],
+      [
+        1793,
+        976
+      ],
+      [
+        1793,
+        455
+      ],
+      [
+        1905,
+        276
+      ]
+    ],
+    [
+      [
+        150,
+        246
+      ],
+      [
+        1910,
+        246
+      ],
+      [
+        1910,
+        274
+      ],
+      [
+        150,
+        274
+      ]
+    ]
+  ],
+  "sourcePsd": {
+    "reference": "docs/psd-reference/inventory.json",
+    "sha256": "a291727795690c2633f0b48388ed9fab296655ae0ef39271f1efc3b8fda4310e",
+    "canvas": [
+      2060,
+      1220
+    ],
+    "documents": 4,
+    "layerRecords": 47,
+    "pixelIdenticalAssets": 16,
+    "cabinetSourceBounds": [
+      60,
+      0,
+      2002,
+      1224
+    ],
+    "currentCabinetRect": [
+      59,
+      0,
+      1942,
+      1220
+    ],
+    "placementPolicy": "Retain owner-approved current alignment; Beta has a 1px source origin difference and four extra bottom rows. Do not silently shift or resize the measured aperture.",
+    "originalFrameOrder": [
+      "FRONT",
+      "FRONT_LEFT",
+      "LEFT",
+      "BACK_LEFT",
+      "BACK",
+      "BACK_RIGHT",
+      "RIGHT",
+      "FRONT_RIGHT"
+    ],
+    "logoLighting": {
+      "LIGHT": {
+        "opacity": 179,
+        "blend": "hard_light",
+        "visible": true
+      },
+      "LIGHT_2": {
+        "opacity": 51,
+        "blend": "hard_light",
+        "visible": false
+      }
+    },
+    "limitations": [
+      "Body trim, seams and panel print are flattened into CABINET",
+      "Button cap and rim are not separate layers",
+      "Ball, shaft and baked shading are joined in each pose sprite",
+      "No editable text layer/font definition in the four inspected documents",
+      "SCREEN layer bounds are content plates, not capture-aperture measurements"
+    ]
+  },
+  "marqueeFace": {
+    "bounds": [
+      143,
+      0,
+      1774,
+      250
+    ],
+    "polygon": [
+      [
+        143,
+        0
+      ],
+      [
+        1917,
+        0
+      ],
+      [
+        1887,
+        250
+      ],
+      [
+        173,
+        250
+      ]
+    ],
+    "policy": "Paint reaches the inner frame on the full trapezoidal face. Native source trim remains outside the polygon; logo uses uniform contain fit. Gameplay aperture and header projection remain fixed."
+  },
+  "buttonMountAuthoring": {
+    "status": "concepts-only; exact registered layers not yet wired",
+    "contract": "art/style-kit-v1/ARTSTYLE.md",
+    "styles": [
+      "recessed precision socket",
+      "segmented circuit collar",
+      "contained graffiti halo",
+      "stepped tournament collar"
+    ],
+    "layersBackToFront": [
+      "contact shadow and recess",
+      "socket collar",
+      "deck-print motif",
+      "mount wear",
+      "physical housing/rim",
+      "physical cap",
+      "separate emission"
+    ],
+    "rules": [
+      "Paint is clipped inside panel face, excluding dark gutters and structural trim.",
+      "Deck decoration never crosses the physical rim/cap or hides adjacent controls.",
+      "Mounts share original nine-button anchors and sloping deck perspective.",
+      "Original source pixels stay unchanged until exact cap/rim masks are authored and verified."
+    ]
+  }
+}

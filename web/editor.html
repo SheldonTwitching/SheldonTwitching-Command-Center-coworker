@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SheldonTwitching Labels</title><link rel="stylesheet" href="editor.css"></head>
+<body><a href="/studio" style="color:#80d7ff;padding:10px;display:block">← Stream Studio · scenes and widgets</a>
+<header class="topbar">
+  <div class="brandmark"><span class="joystick">●<i></i></span></div>
+  <div class="brand"><strong>SHELDONTWITCHING <b>LABELS</b></strong><small>PERSONAL OBS BROWSER SOURCE STUDIO <span class="build">v0.8 PROJECT</span></small></div>
+  <div class="header-actions"><span id="saveStatus" class="statusdot">● Saved</span><button id="undo" class="btn subtle" title="Undo Ctrl+Z" disabled>↶ Undo</button><button id="redo" class="btn subtle" title="Redo Ctrl+Y" disabled>↷ Redo</button><button id="copyUrl" class="btn subtle">⧉ Copy OBS URL</button><button id="downloadProject" class="btn subtle" title="Save an editable project backup">↓ Project</button><button id="importProject" class="btn subtle" title="Open an editable project backup">↑ Open</button><input id="projectFile" type="file" accept=".json,application/json" hidden><button id="exportZip" class="btn hot">↧ Export Overlay ZIP</button></div>
+<a class="btn hot" href="/arcade/editor" title="Open your redesigned arcade overlay editor">🕹 ARCADE OVERLAY V2</a></header>
+<nav class="toolbar"><div class="tab-lamp"></div><span class="toolbar-title">✦ ARCADE OVERLAY DESIGNER</span><span class="sep"></span><label>Canvas</label><input id="canvasW" class="size-box" type="number" value="900" min="160" max="3840"><span class="small-muted">×</span><input id="canvasH" class="size-box" type="number" value="180" min="80" max="2160"><span class="sep"></span><label class="toggle-row"><input id="rotationToggle" type="checkbox" checked> Auto-rotate</label><label class="toggle-row" title="Start the OBS data bridge automatically when signing into Windows"><input id="startupToggle" type="checkbox"> Start with Windows</label><span class="flex"></span><span id="connection" class="connection">● Bridge running</span></nav>
+<main class="workspace">
+  <aside class="leftpane">
+    <section class="pane-title"><span>01 / DATA BRIDGE</span><button class="textbtn" id="refreshSources" title="Refresh folder and files">↻</button></section>
+    <div class="folder-box"><div class="tiny-label">STREAMLABELS TEXT FOLDER</div><div class="folder-form"><input id="folderPath" placeholder="C:\\Streamlabels" aria-label="Streamlabels folder"><button id="browseFolder" class="btn iconbtn" title="Browse folder">▣</button></div><button id="connectFolder" class="btn connect-btn">Connect folder</button><div id="folderState" class="hint">Using example data until a folder is connected.</div></div>
+    <section class="pane-title"><span>02 / MY LABELS</span><button class="textbtn" id="addItem" title="Add new label">＋</button></section>
+    <div id="itemList" class="item-list"></div>
+    <div class="list-footer"><button id="duplicateItem" class="btn subtle">⧉ Duplicate</button><button id="deleteItem" class="btn subtle warn">✕ Delete</button></div>
+    <div class="reorder"><button id="moveUp" class="btn subtle">↑ Move up</button><button id="moveDown" class="btn subtle">↓ Move down</button></div>
+    <section class="pane-title"><span>03 / QUICK LOOKS</span></section><div class="preset-grid"><button data-preset="arcade" class="preset neon">🕹️ Arcade Neon</button><button data-preset="flame" class="preset flame">🔥 Flame</button><button data-preset="minimal" class="preset minimalist">◻ Minimal</button><button data-preset="glass" class="preset glass">✧ Glass</button></div><div class="quick-layout"><span class="tiny-label">QUICK POSITION</span><button data-layout="left" class="btn subtle">Left</button><button data-layout="center" class="btn subtle">Center</button><button data-layout="right" class="btn subtle">Right</button></div><section class="pane-title"><span>04 / DETECTED FILES</span><span id="fileCount" class="file-count">0</span></section>
+    <div id="filesList" class="files-list"><span class="hint">Select a Streamlabels folder.</span></div>
+    <section class="pane-title"><span>05 / STREAM WIDGETS</span></section>
+    <div class="widget-settings">
+      <strong>🎵 Spotify Now Playing</strong><p>Live song and artist, plus a glowing Spotify emblem.</p>
+      <div class="field"><label>Spotify app Client ID</label><input id="spotifyClientId" type="text" spellcheck="false" placeholder="32-character Client ID" maxlength="32"></div>
+      <button id="spotifySave" class="btn subtle block">Save Client ID</button><button id="spotifyConnect" class="btn hot block">Connect Spotify</button>
+      <button id="spotifyDisconnect" class="btn subtle block">Disconnect</button>
+      <p id="spotifyStatus" class="hint">Not connected</p><a target="_blank" rel="noopener" href="/now-playing">↗ OBS preview: Now Playing</a>
+      <div class="widget-divider"></div>
+      <strong>💰 STREAM COSTS · STREAMLABS TIP GOAL</strong>
+      <p>Your real goal and tip totals stay on <b>Streamlabs.com</b>. This app designs the HTML/CSS/JS appearance — it does not duplicate donations or need .txt files.</p>
+      <div class="color-grid"><div class="field"><label>Neon progress color</label><input data-tip="accent" type="color"></div><div class="field"><label>Cabinet trim</label><input data-tip="secondary" type="color"></div></div>
+      <div class="field"><label>Goal title font size (12–36px)</label><input data-tip="fontSize" type="range" min="12" max="36" step="1"></div>
+      <div class="field"><label>Goal animation</label><select data-tip="animation"><option value="shine">Arcade shine</option><option value="pulse">Neon pulse</option><option value="none">No loop</option></select></div>
+      <div class="field"><label>Advanced Streamlabs Custom CSS</label><textarea data-tip="customCSS" spellcheck="false" rows="5" placeholder="#st-tip-goal { ... }"></textarea></div>
+      <a class="btn hot block" download href="/api/export-streamlabs-tip-theme">↓ Export Streamlabs HTML / CSS / JS</a>
+      <p class="hint">Paste each exported file into Streamlabs Dashboard → All Widgets → Tip Goal → Custom HTML/CSS/JS. Back up your old theme first.</p>
+      <a target="_blank" rel="noopener" href="/streamlabs-tip-preview">↗ Preview arcade theme (sample amounts)</a>
+      <p class="hint">Leave the existing Streamlabs Tip Goal as its own OBS Browser Source. The gameplay scene does not generate another tip bar.</p>
+    </div>
+
+  </aside>
+  <section class="centerpane">
+    <div class="section-heading"><div><span class="section-overline">EDITOR / LIVE CANVAS</span><h1>Overlay Preview</h1></div><div class="preview-actions"><label class="toggle-row"><input id="showAll" type="checkbox"> Show all</label><button id="previewPlay" class="btn subtle">▶ Preview rotation</button></div></div>
+    <div id="canvasViewport" class="canvas-viewport"><div class="scanline"></div><div id="stageScaler"><div id="previewHost"></div></div><div class="corner top-left"></div><div class="corner top-right"></div><div class="corner bottom-left"></div><div class="corner bottom-right"></div></div>
+    <div class="canvas-foot"><span>DRAG LABELS TO POSITION • DRAG CORNER TO RESIZE</span><span id="canvasScale">900 × 180 · 100%</span></div>
+    <div class="lower-panel"><div class="section-heading small"><div><span class="section-overline">LIVE FILE PARSING</span><h2>What OBS will show</h2></div><button id="openObs" class="btn subtle">↗ Open OBS preview</button></div><div class="parse-grid"><div><div class="tiny-label">SOURCE TEXT</div><div id="rawPreview" class="data-preview">—</div></div><div class="arrow-col">➜</div><div><div class="tiny-label">FORMATTED RESULT</div><div id="parsedPreview" class="data-preview highlight">—</div></div></div><div class="timeline"><span class="tiny-label">ROTATION ORDER</span><div id="timelineItems" class="timeline-items"></div></div></div>
+    <div class="info-strip">★ CUSTOM STYLE, BUILT FOR SHELDONTWITCHING <span>•</span> Saved designs update your live OBS URL automatically.</div>
+  </section>
+  <aside class="rightpane">
+    <div class="pane-title property-header"><span>04 / ITEM PROPERTIES</span><span id="selectedTag" class="selected-tag">FOLLOWER</span></div>
+    <div class="editor-tabs" role="tablist"><button class="active" data-tab="visual">Visual</button><button data-tab="data">Data</button><button data-tab="motion">Motion</button><button data-tab="css">CSS</button></div>
+    <div id="properties" class="properties">
+      <div class="tab-content active" data-panel="visual">
+        <div class="field"><label>Item name</label><input data-field="name" type="text"></div>
+        <div class="field"><label>Heading shown on stream</label><input data-field="label" type="text"></div>
+        <div class="field"><label>Choose an icon</label><div id="iconChoices" class="icon-choices"></div><div class="icon-import"><input data-field="icon" id="customIconText" type="text" placeholder="Emoji or icon text"><label class="upload-label" for="iconUpload">⬆ Import image</label><input id="iconUpload" type="file" accept=".png,.jpg,.jpeg,.webp,.svg,image/*" hidden></div></div>
+        <div class="field"><label>SF6 cast icon library · personal-use concept assets</label><input id="rosterSearch" type="search" placeholder="Search characters" aria-label="Search SF6 characters"><div id="rosterChoices" class="roster-choices"></div><div class="field-help">Select a portrait to embed it in the widget. Other roster art is being commissioned.</div></div>
+        <div class="field"><label>Font family (Windows font names supported)</label><input data-field="font" type="text" list="fontChoices" placeholder="Impact, sans-serif"><datalist id="fontChoices"><option value="'Arial Narrow', Impact, sans-serif"><option value="Impact, sans-serif"><option value="'Segoe UI', sans-serif"><option value="'Trebuchet MS', sans-serif"><option value="Georgia, serif"><option value="monospace"><option value="'Bebas Neue', Impact, sans-serif"></datalist></div>
+        <div class="slider-pair"><div class="field"><label>Text size <output id="fontSizeValue"></output></label><input data-field="fontSize" type="range" min="10" max="75"></div><div class="field"><label>Icon size <output id="iconSizeValue"></output></label><input data-field="iconSize" type="range" min="10" max="85"></div></div>
+        <div class="slider-pair"><div class="field"><label>Heading size <output id="labelSizeValue"></output></label><input data-field="labelSize" type="range" min="8" max="42"></div><div class="field"><label>Font weight <output id="fontWeightValue"></output></label><input data-field="fontWeight" type="range" min="100" max="900" step="100"></div></div>
+        <div class="slider-pair"><div class="field"><label>Spacing <output id="gapValue"></output></label><input data-field="gap" type="range" min="0" max="50"></div><div class="field"><label>Padding <output id="padValue"></output></label><input data-field="pad" type="range" min="0" max="50"></div></div>
+        <div class="slider-pair"><div class="field"><label>Corner radius <output id="radiusValue"></output></label><input data-field="radius" type="range" min="0" max="40"></div><div class="field"><label>Neon glow <output id="shadowValue"></output></label><input data-field="shadow" type="range" min="0" max="45"></div></div>
+        <div class="field"><label>Border width <output id="borderValue"></output></label><input data-field="border" type="range" min="0" max="15"></div><div class="field"><label>Text alignment</label><select data-field="align"><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select></div>
+        <div class="color-grid"><div class="field"><label>Neon accent</label><input data-field="accent" type="color"></div><div class="field"><label>Text</label><input data-field="textColor" type="color"></div><div class="field"><label>Label</label><input data-field="labelColor" type="color"></div><div class="field"><label>Panel base</label><input id="panelColor" type="color"></div></div>
+        <div class="field"><label>Panel opacity <output id="opacityValue"></output></label><input id="panelOpacity" type="range" min="0" max="100" value="91"></div>
+        <div class="section-minor">Position & dimensions</div>
+        <div class="numeric-grid"><div class="field"><label>X</label><input data-field="x" type="number" min="0"></div><div class="field"><label>Y</label><input data-field="y" type="number" min="0"></div><div class="field"><label>Width</label><input data-field="w" type="number" min="70"></div><div class="field"><label>Height</label><input data-field="h" type="number" min="30"></div></div>
+      </div>
+      <div class="tab-content" data-panel="data">
+        <div class="field"><label>Bound Streamlabels .txt file</label><input list="availableFiles" data-field="file" placeholder="most_recent_follower.txt"><datalist id="availableFiles"></datalist><div class="field-help">Swap data files without changing the label design.</div></div>
+        <div class="field"><label>Fallback / example text</label><input data-field="fallback" type="text"></div>
+        <div class="field"><label>Parsing rule</label><select data-field="parseMode"><option value="raw">Show full file</option><option value="before-colon">Everything before colon</option><option value="amount">Find currency amount</option><option value="split">Split text</option><option value="regex">Custom regular expression</option></select></div>
+        <div class="field"><label>Split delimiter</label><input data-field="delimiter" type="text" placeholder=":"></div>
+        <div class="field"><label>Split segment (starts at 0)</label><input data-field="part" type="number" min="0" max="30"></div>
+        <div class="field"><label>Regex pattern (first capture group)</label><input data-field="pattern" type="text" placeholder="(\\w+)"></div>
+        <div class="slider-pair"><div class="field"><label>Prefix</label><input data-field="prefix" type="text" placeholder=""></div><div class="field"><label>Suffix</label><input data-field="suffix" type="text" placeholder=""></div></div>
+        <div class="notice">The exact text-file contents are shown in the live parser panel. Your fallback text is displayed until a valid file exists.</div>
+      </div>
+      <div class="tab-content" data-panel="motion">
+        <div class="field"><label>Entrance animation</label><select data-field="enter"><option value="slide-right">Slide right</option><option value="slide-down">Slide down</option><option value="coin-flip">Insert coin</option><option value="vs-slam">VS slam</option><option value="round-stamp">Round stamp</option><option value="pixel-wipe">Pixel wipe</option><option value="scan-reveal">Scan reveal</option><option value="neon-flicker">Neon flicker</option><option value="glitch-cut">Glitch cut</option><option value="stagger-bars">Stagger bars</option><option value="rank-up">Rank up</option><option value="arcade-boot">Arcade boot</option><option value="paint-swipe">Graffiti swipe</option><option value="uppercut">Uppercut</option><option value="dash-in">Dash in</option><option value="spotlight">Spotlight</option><option value="letterbox">Letterbox reveal</option><option value="crt-power">CRT power</option><option value="combo-pulse">Combo pulse</option><option value="slide-up">Slide up</option><option value="slide-left">Slide left</option><option value="fade">Fade in</option><option value="zoom">Zoom in</option><option value="pop">Arcade pop</option></select></div>
+        <div class="field"><label>Exit animation</label><select data-field="exit"><option value="slide-right">Slide right</option><option value="slide-down">Slide down</option><option value="coin-flip">Insert coin</option><option value="vs-slam">VS slam</option><option value="round-stamp">Round stamp</option><option value="pixel-wipe">Pixel wipe</option><option value="scan-reveal">Scan reveal</option><option value="neon-flicker">Neon flicker</option><option value="glitch-cut">Glitch cut</option><option value="stagger-bars">Stagger bars</option><option value="rank-up">Rank up</option><option value="arcade-boot">Arcade boot</option><option value="paint-swipe">Graffiti swipe</option><option value="uppercut">Uppercut</option><option value="dash-in">Dash in</option><option value="spotlight">Spotlight</option><option value="letterbox">Letterbox reveal</option><option value="crt-power">CRT power</option><option value="combo-pulse">Combo pulse</option><option value="fade">Fade out</option><option value="slide-up">Slide up</option><option value="slide-left">Slide left</option><option value="zoom">Zoom out</option><option value="pop">Scale away</option></select></div>
+        <div class="field"><label>Transition duration <output id="transitionMsValue"></output></label><input data-field="transitionMs" type="range" min="100" max="2000" step="50"></div>
+        <div class="field"><label>Time on screen <output id="dwellValue"></output></label><input data-field="dwell" type="range" min="1" max="30" step="1"></div>
+        <div class="field"><label class="toggle-row"><input data-field="enabled" type="checkbox"> Enable this label in OBS</label></div>
+        <label>Idle icon animation<select data-field="idleAnimation"><option value="none">None · quiet text</option><option value="pulse">Soft pulse</option><option value="float">Pixel float</option><option value="heartbeat">Heartbeat</option><option value="flicker">Neon flicker</option></select></label><button id="replayAnimation" class="btn hot block">▶ Preview this animation</button>
+        <div class="notice">OBS cycles through enabled items. Each label controls its own hold time, transition duration and effects.</div>
+      </div>
+      <div class="tab-content" data-panel="css">
+        <div class="section-minor">Advanced CSS overrides</div><p class="field-help">Custom CSS applies inside the overlay only. It is layered over visual styles. Use <code>.overlay-card</code>, <code>.overlay-value</code>, <code>.overlay-kicker</code>, and <code>.overlay-icon</code>.</p>
+        <textarea id="customCSS" class="css-input" spellcheck="false" placeholder=".overlay-value {\n  text-transform: uppercase;\n  letter-spacing: 1px;\n}"></textarea>
+        <div class="css-actions"><button id="copyCSS" class="btn subtle">⧉ Copy overrides</button><button id="copyGeneratedCSS" class="btn subtle">⧉ Copy generated CSS</button><button id="loadCSS" class="btn subtle">Import .css</button><input type="file" id="loadCSSFile" accept=".css,text/css" hidden></div>
+        <div class="section-minor">Example rules</div><button id="insertCSS" class="btn subtle block">＋ Add pulsing neon effect</button>
+        <div class="notice">CSS stays separate from slider-generated styles, so changing visual controls won't silently overwrite your code.</div>
+      </div>
+    </div>
+  </aside>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<script src="renderer.js"></script><script src="editor.js"></script>
+<script type="module" src="/preview-popout.js"></script></body></html>

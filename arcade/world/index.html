@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SheldonTwitching — live arcade prototype</title><link rel="stylesheet" href="style.css?v=18"></head>
+<body>
+<main id="viewport"><div id="stage"><img id="room" src="assets/arcade-room-v16.png" alt="SheldonTwitching arcade"><img id="cabinetTint" src="assets/arcade-room-v16.png" alt=""><div id="surfaces"></div><canvas id="effects" width="1672" height="941"></canvas><div id="connection" role="status">CONNECTING</div></div></main>
+<aside id="controls" hidden><strong>LOCAL PREVIEW</strong><button id="demo">Start demo fights</button><button id="reset">Reset session / 10:00</button><button id="audio">Share music audio</button><button id="groove-preview">Preview groove</button><details><summary>OBS music</summary><form id="obs-form"><label>Port <input aria-label="OBS port" id="obs-port" type="number" min="1" max="65535" value="4455"></label><label>Password <input aria-label="OBS password" id="obs-password" type="password" autocomplete="off"></label><button aria-label="Connect OBS">Connect</button><label>Music source <select aria-label="OBS music source" id="obs-source"><option value="">Choose after connecting</option></select></label><button aria-label="Disconnect OBS" id="obs-stop" type="button">Disconnect</button><small>Reads one source's level. Password stays in this tab.</small></form></details><label><input id="widget-samples" type="checkbox"> Widget layout preview</label><span id="status">Audio disconnected</span></aside>
+<script type="module" src="app.js?v=21"></script>
+</body></html>

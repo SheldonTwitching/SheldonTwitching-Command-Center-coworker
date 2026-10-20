@@ -1,0 +1,42 @@
+# Python caches, test output, virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Windows executable packaging artifacts
+build/
+dist/
+*.spec
+
+# Editor runtime/user data and local configuration
+project.json
+project.json.bak
+*.log
+.env
+.env.*
+!.env.example
+
+# Operating system and IDE clutter
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+.studio-preview/
+
+# Generated Windows version resources
+installer/version_info.txt
+arcade/build-info.json
+
+# User-owned data stays outside source control
+User Data/
+References/
+Local Inventory/
+
+# Reproducible local art-kit download archive; source files are tracked
+art/*.zip

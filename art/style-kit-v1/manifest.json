@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-10-20",
+  "referenceAssets": [
+    {
+      "path": "references/brand/SheldonTwitching-full-logo-original.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "9978bd2f676add9bdb7a6e73c893ea582c19429b87a2b4544082a9270599a07c",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/brand/ST-monogram-original.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "sha256": "bb7a398bd01f1030ffe3fb4b4575ed574ddd8d7675bf271790565326de1db990",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/cabinet1-composite-reference.png",
+      "dimensions": [
+        1236,
+        732
+      ],
+      "sha256": "a4efa4757bc8143d228335a0aae77ca0b4968fd1067be8324fd6e2f8f3230f0e",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/graffiti-paint-reference.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "b37ad9dc9ce73ca5d8437e6e3937a7e37c216f64c86de20b4f24fd55faa2159f",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/ARROW_DOWN.png",
+      "dimensions": [
+        44,
+        46
+      ],
+      "sha256": "f2d3e032ce6bc32a9765d7cd5abc6ad2d5f69a958fe7f5362cc39c145b084730",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/ARROW_L.png",
+      "dimensions": [
+        44,
+        42
+      ],
+      "sha256": "62b6aa534bb68d183c7c7733dc74c7514386745b621f21aef08a1511dc7386ee",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/ARROW_R.png",
+      "dimensions": [
+        44,
+        42
+      ],
+      "sha256": "a0f363863d9db1106072bb6c8e818f024a0b28f973b0d66527ffbe4986a65ee4",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/ARROW_UP.png",
+      "dimensions": [
+        44,
+        42
+      ],
+      "sha256": "8b7c8436bad8305bed13b65e63c84f832c855faee2fd73965c7ee849cebe1ac8",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/BACK.png",
+      "dimensions": [
+        100,
+        158
+      ],
+      "sha256": "27ab16a1a64eaddcd9d77a4041dd7f6ac5f17833ab7927b718a0047f09d103a2",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/BACK_LEFT.png",
+      "dimensions": [
+        124,
+        140
+      ],
+      "sha256": "ad484998a6f6e5b6a3eea915667888853249b8c902e8315d1b61a982cbc53387",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/BACK_RIGHT.png",
+      "dimensions": [
+        124,
+        138
+      ],
+      "sha256": "d5f78258ee3ba2ac2dbff77b4649afe397a4d276cbd435d34b3126fd231ae72e",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/BUTTON_NEUTRAL.png",
+      "dimensions": [
+        78,
+        66
+      ],
+      "sha256": "c3db77040de8ea6b3eab1a0b53b0e18e3af3a805fbc197686afd6f4c426449b7",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/BUTTON_PRESSED.png",
+      "dimensions": [
+        78,
+        60
+      ],
+      "sha256": "d28de58a1d1288d58c4d893c3777c10b10f064fbe7797e4c27a873dcc11af8c1",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/FRONT.png",
+      "dimensions": [
+        100,
+        204
+      ],
+      "sha256": "3da026b3e6bc21cac2b2d70fd8b85b3f14e34df5fd731fc1da37499512dcabf1",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/FRONT_LEFT.png",
+      "dimensions": [
+        126,
+        168
+      ],
+      "sha256": "aeaaf09389af4c2ca50d10df2a667877dc1e6d0a0e150f6a3270202cff448355",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/FRONT_RIGHT.png",
+      "dimensions": [
+        126,
+        168
+      ],
+      "sha256": "e59c64d3de2bde1af72da120ce74177dfba2dd31cd96986e196e33ab1d82e503",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/LEFT.png",
+      "dimensions": [
+        136,
+        178
+      ],
+      "sha256": "3763c8a4912593e01928ccdbde2522980a6f2a580d6874287bc57188240ae528",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/NEUTRAL.png",
+      "dimensions": [
+        100,
+        204
+      ],
+      "sha256": "401d7272e950022f287ac99bb425b59061f3d03b3f8026e35541fb4ff663e68c",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/original-controls/RIGHT.png",
+      "dimensions": [
+        136,
+        178
+      ],
+      "sha256": "60c3714b39ac9164dee962503c2bd4c18e5a45ac550eff502b7ddfb2d1b12fee",
+      "status": "source-reference-not-edited"
+    },
+    {
+      "path": "references/rooftop-material-reference.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "sha256": "fcd4a2107d71f405725ed9d1ae7b9a310c06e8c4ed99206c866c4340c3ebffe0",
+      "status": "source-reference-not-edited"
+    }
+  ],
+  "generatedCandidates": [
+    {
+      "path": "candidates/stage-props-study-v1.png",
+      "tool": "built-in image_gen",
+      "sourceFile": "exec-03fd9dbd-c546-4bf7-9c02-ffbbe5bed595.png",
+      "status": "candidate-reference-not-runtime-approved",
+      "notes": "3x3 props, 9 objects, needs pixel-scale and individual anchor review",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "e5a4a58d45a826d33bf9f837c5a23a4c797f565d95b912d7456942e759c367d8",
+      "transparentPixels": 721811,
+      "pixelGridVerified": false,
+      "loopVerified": false
+    },
+    {
+      "path": "candidates/button-mounts-study-v1.png",
+      "tool": "built-in image_gen",
+      "sourceFile": "exec-ca2522c8-aa06-4cff-ae0b-51566e5c2a46.png",
+      "status": "candidate-reference-not-runtime-approved",
+      "notes": "2x2 deck collar concepts, not physical button replacements",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "ee8cfae5f307f076acf6857bcd4e2d0a858a854fde727b18c0796f4481917f84",
+      "transparentPixels": 766550,
+      "pixelGridVerified": false,
+      "loopVerified": false
+    },
+    {
+      "path": "candidates/weather-fx-study-v1.png",
+      "tool": "built-in image_gen",
+      "sourceFile": "exec-25ff9f13-1754-4670-b12b-62597288b362.png",
+      "status": "candidate-reference-not-runtime-approved",
+      "notes": "4x4 candidates; glow/edge density and loop/frame registration require cleanup",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sha256": "6020e0abdfadb9658f22eea081b27e6eb45b0add70c07395c735b2776f2d50e2",
+      "transparentPixels": 1134571,
+      "pixelGridVerified": false,
+      "loopVerified": false
+    }
+  ],
+  "important": "Alpha was inspected numerically. RGB beneath fully transparent pixels may still show backdrop colors in viewers that ignore alpha; do not flatten the PNGs. Candidate softness/registration still needs review.",
+  "requiredMusicReactiveAssetsPerStage": 1,
+  "psdNamedLayers": 158,
+  "psdRequiredMusicSubgroupParts": 12
+}

@@ -1,0 +1,78 @@
+:host { display:block; width:100%; height:100%; box-sizing:border-box; }
+* { box-sizing:border-box; }
+.stage { position:relative; width:var(--stage-width,900px); height:var(--stage-height,180px); overflow:hidden; isolation:isolate; background:transparent; }
+.overlay-card { position:absolute; display:flex; align-items:center; gap:var(--gap,14px); padding:var(--pad,18px); border-radius:var(--radius,12px); border:var(--border,2px) solid var(--accent,#e600d9); background:var(--bg,#230934e8); min-width:0; min-height:0; box-shadow:0 0 var(--shadow,12px) color-mix(in srgb, var(--accent,#e600d9) 55%, transparent),inset 0 0 20px #00000033; color:var(--value-color,white); font-family:var(--font,Impact,sans-serif); overflow:hidden; transform-origin:center center; user-select:none; }
+.overlay-card::before { content:""; position:absolute; left:10px; right:10px; height:2px; top:0; background:linear-gradient(90deg,transparent,var(--accent),transparent); opacity:.8; pointer-events:none; }
+.overlay-icon { flex:none; width:var(--icon-size,38px); height:var(--icon-size,38px); display:flex; align-items:center; justify-content:center; font-family:"Segoe UI Emoji",sans-serif; font-size:var(--icon-size,38px); line-height:1; filter:drop-shadow(0 0 5px #ffffff44); }
+.overlay-icon img { display:block; width:100%; height:100%; object-fit:contain; }
+.overlay-text { min-width:0; display:flex; flex:1; flex-direction:column; gap:3px; }
+.overlay-kicker { color:var(--label-color,#e5b7ff); font-size:var(--label-size,15px); font-family:var(--font,Impact,sans-serif); font-weight:700; text-transform:uppercase; line-height:1.05; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; text-shadow:0 1px 3px #000; }
+.overlay-value { font-size:var(--font-size,30px); font-weight:var(--weight,800); line-height:1.05; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:var(--value-color,#fff); text-shadow:2px 3px 3px #0009; }
+.overlay-card[data-align="center"] { text-align:center; }
+.overlay-card[data-align="right"] { text-align:right; }
+.overlay-card.selected { outline:2px dashed #fff9; outline-offset:4px; cursor:grab; }
+.overlay-card.selected:active { cursor:grabbing; }
+.overlay-card .resize-grip { position:absolute; width:17px; height:17px; right:0; bottom:0; background:linear-gradient(135deg,transparent 45%,#ffffffcc 48%,#ffffffcc 60%,var(--accent) 60%); cursor:nwse-resize; display:none; }
+.overlay-card.selected .resize-grip { display:block; }
+.overlay-card.is-hidden { visibility:hidden; }
+@keyframes sl-fade-in { from{opacity:0;}to{opacity:1;} }
+@keyframes sl-fade-out { from{opacity:1;}to{opacity:0;} }
+@keyframes sl-slide-up-in { from{opacity:0;transform:translateY(35px);}to{opacity:1;transform:translateY(0);} }
+@keyframes sl-slide-up-out { from{opacity:1;transform:translateY(0);}to{opacity:0;transform:translateY(-30px);} }
+@keyframes sl-slide-left-in { from{opacity:0;transform:translateX(55px);}to{opacity:1;transform:translateX(0);} }
+@keyframes sl-slide-left-out { from{opacity:1;transform:translateX(0);}to{opacity:0;transform:translateX(-55px);} }
+@keyframes sl-zoom-in { from{opacity:0;transform:scale(.62);}to{opacity:1;transform:scale(1);} }
+@keyframes sl-zoom-out { from{opacity:1;transform:scale(1);}to{opacity:0;transform:scale(.64);} }
+@keyframes sl-pop-in { 0%{transform:scale(.55);opacity:0;}65%{transform:scale(1.12);opacity:1;}100%{transform:scale(1);opacity:1;} }
+@keyframes sl-pop-out { from{transform:scale(1);opacity:1;}to{transform:scale(.7);opacity:0;} }
+.enter-fade { animation:sl-fade-in var(--transition,550ms) ease-out both; }
+.enter-slide-up { animation:sl-slide-up-in var(--transition,550ms) cubic-bezier(.15,.85,.2,1) both; }
+.enter-slide-left { animation:sl-slide-left-in var(--transition,550ms) cubic-bezier(.15,.85,.2,1) both; }
+.enter-zoom { animation:sl-zoom-in var(--transition,550ms) ease-out both; }
+.enter-pop { animation:sl-pop-in var(--transition,550ms) ease-out both; }
+.exit-fade { animation:sl-fade-out var(--transition,550ms) ease-in both; }
+.exit-slide-up { animation:sl-slide-up-out var(--transition,550ms) ease-in both; }
+.exit-slide-left { animation:sl-slide-left-out var(--transition,550ms) ease-in both; }
+.exit-zoom { animation:sl-zoom-out var(--transition,550ms) ease-in both; }
+.exit-pop { animation:sl-pop-out var(--transition,550ms) ease-in both; }
+
+/* Command Center motion library: matched enter/exit, editor and OBS. */
+@keyframes cc-slide-right{from{opacity:0;transform:translateX(-70px)}to{opacity:1;transform:translateX(0)}}
+.enter-slide-right{animation:cc-slide-right var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-slide-right{animation:cc-slide-right var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-slide-down{from{opacity:0;transform:translateY(-40px)}to{opacity:1;transform:translateY(0)}}
+.enter-slide-down{animation:cc-slide-down var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-slide-down{animation:cc-slide-down var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-coin-flip{from{opacity:0;transform:perspective(800px) rotateY(90deg) scale(.8)}to{opacity:1;transform:perspective(800px) rotateY(0) scale(1)}}
+.enter-coin-flip{animation:cc-coin-flip var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-coin-flip{animation:cc-coin-flip var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-vs-slam{from{opacity:0;transform:translateX(120px) skewX(-12deg)}to{opacity:1;transform:translateX(0) skewX(0)}}
+.enter-vs-slam{animation:cc-vs-slam var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-vs-slam{animation:cc-vs-slam var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-round-stamp{from{opacity:0;transform:scale(1.6) rotate(-10deg)}to{opacity:1;transform:scale(1) rotate(0)}}
+.enter-round-stamp{animation:cc-round-stamp var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-round-stamp{animation:cc-round-stamp var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-pixel-wipe{from{clip-path:inset(0 100% 0 0);opacity:0}to{clip-path:inset(0 0 0 0);opacity:1}}
+.enter-pixel-wipe{animation:cc-pixel-wipe var(--transition,550ms) steps(7,end) both}.exit-pixel-wipe{animation:cc-pixel-wipe var(--transition,550ms) steps(7,end) reverse both}
+@keyframes cc-scan-reveal{from{clip-path:inset(50% 0 50% 0);opacity:0}to{clip-path:inset(0);opacity:1}}
+.enter-scan-reveal{animation:cc-scan-reveal var(--transition,550ms) steps(7,end) both}.exit-scan-reveal{animation:cc-scan-reveal var(--transition,550ms) steps(7,end) reverse both}
+@keyframes cc-neon-flicker{from{opacity:0;filter:brightness(2)}to{opacity:1;filter:brightness(1)}}
+.enter-neon-flicker{animation:cc-neon-flicker var(--transition,550ms) steps(7,end) both}.exit-neon-flicker{animation:cc-neon-flicker var(--transition,550ms) steps(7,end) reverse both}
+@keyframes cc-glitch-cut{from{opacity:0;transform:translateX(-12px) skewX(9deg)}to{opacity:1;transform:translateX(0) skewX(0)}}
+.enter-glitch-cut{animation:cc-glitch-cut var(--transition,550ms) steps(7,end) both}.exit-glitch-cut{animation:cc-glitch-cut var(--transition,550ms) steps(7,end) reverse both}
+@keyframes cc-stagger-bars{from{clip-path:inset(0 100% 0 0);transform:translateX(-20px)}to{clip-path:inset(0);transform:translateX(0)}}
+.enter-stagger-bars{animation:cc-stagger-bars var(--transition,550ms) steps(7,end) both}.exit-stagger-bars{animation:cc-stagger-bars var(--transition,550ms) steps(7,end) reverse both}
+@keyframes cc-rank-up{from{opacity:0;transform:translateY(55px) scale(.85)}to{opacity:1;transform:translateY(0) scale(1)}}
+.enter-rank-up{animation:cc-rank-up var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-rank-up{animation:cc-rank-up var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-arcade-boot{from{opacity:0;transform:scaleY(.03)}to{opacity:1;transform:scaleY(1)}}
+.enter-arcade-boot{animation:cc-arcade-boot var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-arcade-boot{animation:cc-arcade-boot var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-paint-swipe{from{clip-path:polygon(0 0,0 0,0 100%,0 100%);opacity:0}to{clip-path:polygon(0 0,100% 0,100% 100%,0 100%);opacity:1}}
+.enter-paint-swipe{animation:cc-paint-swipe var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-paint-swipe{animation:cc-paint-swipe var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-uppercut{from{opacity:0;transform:translateY(80px) rotate(5deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+.enter-uppercut{animation:cc-uppercut var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-uppercut{animation:cc-uppercut var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-dash-in{from{opacity:0;transform:translateX(-100px) scaleX(1.15)}to{opacity:1;transform:translateX(0) scaleX(1)}}
+.enter-dash-in{animation:cc-dash-in var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-dash-in{animation:cc-dash-in var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-spotlight{from{clip-path:circle(0 at 20% 50%);opacity:0}to{clip-path:circle(150% at 20% 50%);opacity:1}}
+.enter-spotlight{animation:cc-spotlight var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-spotlight{animation:cc-spotlight var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-letterbox{from{clip-path:inset(0 50%);opacity:0}to{clip-path:inset(0);opacity:1}}
+.enter-letterbox{animation:cc-letterbox var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-letterbox{animation:cc-letterbox var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-crt-power{from{opacity:0;transform:scale(.9,.02)}to{opacity:1;transform:scale(1)}}
+.enter-crt-power{animation:cc-crt-power var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-crt-power{animation:cc-crt-power var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-combo-pulse{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.enter-combo-pulse{animation:cc-combo-pulse var(--transition,550ms) cubic-bezier(.18,.8,.25,1) both}.exit-combo-pulse{animation:cc-combo-pulse var(--transition,550ms) cubic-bezier(.18,.8,.25,1) reverse both}
+@keyframes cc-idle-pulse{50%{filter:brightness(1.35)}}@keyframes cc-idle-float{50%{transform:translateY(-3px)}}@keyframes cc-idle-heart{15%,35%{transform:scale(1.07)}25%,45%{transform:scale(1)}}@keyframes cc-idle-flicker{40%{opacity:.8}42%{opacity:1}}:where(.overlay-card[data-idle=pulse]) .overlay-icon{animation:cc-idle-pulse 2s ease-in-out infinite}:where(.overlay-card[data-idle=float]) .overlay-icon{animation:cc-idle-float 3s steps(6) infinite}:where(.overlay-card[data-idle=heartbeat]) .overlay-icon{animation:cc-idle-heart 3s infinite}:where(.overlay-card[data-idle=flicker]) .overlay-icon{animation:cc-idle-flicker 4s steps(1) infinite}@media(prefers-reduced-motion:reduce){.overlay-card,.overlay-card *{animation:none!important;transition:none!important}}

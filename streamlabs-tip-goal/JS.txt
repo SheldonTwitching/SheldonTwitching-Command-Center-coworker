@@ -1,0 +1,48 @@
+/* SheldonTwitching Labels: Streamlabs Tip Goal event adapter.
+   goalLoad / goalEvent event shape follows Streamlabs' goal widget custom-JS conventions.
+   These are local widget events, not Streamlabels text files. */
+(function () {
+  'use strict';
+  const root = document.getElementById('st-tip-goal');
+  if (!root) return;
+  const titleEl = document.getElementById('st-goal-title');
+  const currentEl = document.getElementById('st-goal-current');
+  const goalEl = document.getElementById('st-goal-target');
+  const percentageEl = document.getElementById('st-goal-percent');
+  const fillEl = document.getElementById('st-goal-fill');
+  const trackEl = root.querySelector('.st-goal-track');
+  let lastAmount = null;
+  let animationTimeout = null;
+  function money(value) { return '$' + value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function update(payload) {
+    const detail = payload && payload.detail;
+    if (!detail || typeof detail !== 'object' || !detail.amount) return;
+    const curr = Number(detail.amount.current);
+    const target = Number(detail.amount.target);
+    if (!Number.isFinite(curr) || !Number.isFinite(target)) return;
+    const current = Math.max(0, curr);
+    const goal = Math.max(0, target);
+    const percentage = goal > 0 ? Math.min(100, (current / goal) * 100) : 0;
+    titleEl.textContent = typeof detail.title === 'string' && detail.title.trim() ? detail.title : 'STREAM COSTS';
+    currentEl.textContent = money(current);
+    goalEl.textContent = money(goal);
+    percentageEl.textContent = Math.round(percentage) + '%';
+    fillEl.style.width = percentage.toFixed(3) + '%';
+    trackEl.setAttribute('aria-valuenow', String(Math.round(percentage)));
+    if (lastAmount !== null && current > lastAmount) {
+      root.classList.remove('st-goal-updated');
+      void root.offsetWidth;
+      root.classList.add('st-goal-updated');
+      if (animationTimeout) clearTimeout(animationTimeout);
+      animationTimeout = setTimeout(() => root.classList.remove('st-goal-updated'), 500);
+    }
+    lastAmount = current;
+  }
+  root.dataset.animation = '%%ANIMATION%%';
+  document.addEventListener('goalLoad', update);
+  document.addEventListener('goalEvent', update);
+  // The preview uses fake data locally. This branch is OFF inside Streamlabs.
+  if (root.hasAttribute('data-sample-preview')) {
+    update({detail:{title:'STREAM COSTS',amount:{current:35,target:100}}});
+  }
+})();

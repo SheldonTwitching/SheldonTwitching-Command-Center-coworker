@@ -1,0 +1,12 @@
+---
+description: Mandatory SheldonTwitching cabinet pixel art preservation
+alwaysApply: true
+---
+
+- Read docs/command-center/PIXEL_ART_CONTRACT.md before changing cabinet art or materials.
+- Pixel art is mandatory for balltop, shaft, buttons, cabinet and animated scenes.
+- Preserve native sprite alpha, pixel clusters, dithering, highlights and shadows; nearest-neighbor rendering only.
+- Never replace source control shading with smooth procedural sphere/3D shaders, blur or gradients.
+- Palette changes may recolor authored pixels; custom lighting requires authored pixel masks and visual acceptance.
+- Paint must cover registered panel faces fully while staying out of independently colored trim.
+- Review native and gameplay renders plus enlarged control crops before shipping.

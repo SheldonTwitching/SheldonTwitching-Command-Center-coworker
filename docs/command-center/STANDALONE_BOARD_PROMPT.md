@@ -1,0 +1,13 @@
+# Prompt for a separate chat: SheldonTwitching Project Board
+
+Build a separate personal Windows application named SheldonTwitching - Project Board.exe. This is a standalone EXE, not a feature inside SheldonTwitching - Command Center. Do not create or fork a chat automatically; I will paste this brief into the separate chat.
+
+Use the existing extraction reference at C:/Twitch/SheldonTwitching 4.0/Codex Projects/Command Center/Project/extras/standalone-board. Inspect its README, local persistence, GitHub device sign-in code, UI and tests before reusing anything. Treat it as prototype code with known remaining acceptance work, not a finished independent application.
+
+Keep the interface simple: one board, six columns (Inbox, Ready, In progress, Review, Owner testing, Done), a clear New task button, drag-and-drop or Move menu, priorities, search, screenshot notes, editable acceptance criteria and recoverable archive. Explain features in plain language and progressively reveal advanced settings. Use dark navy and glacier blue, consistent with the Command Center identity. Include resizable pop-out windows and its own tray icon and installer.
+
+Use its own project directory and private data directory. Offer an explicit copy-and-verify import of the old kanban.json, backup and board-attachments from the Command Center User Data folder. Retain original data, refuse different-profile overwrites and never import or expose credentials. Coordinate source paths so this app cannot break or reintroduce a board into the streaming Command Center.
+
+Support offline local editing and optional two-way sync with the existing PRIVATE GitHub Project https://github.com/users/SheldonTwitching/projects/1. Preserve stable item IDs, detect conflicts and keep both versions, avoid duplicate cards after retries, never silently delete remote or local work, and label sync/authentication state honestly. The former adapter handles draft cards; issues/PRs and transactional remote conflict protection are not already implemented. Review and improve that limitation before claiming safe live sync. GitHub scopes must match the operations, and owner authentication stays local. Do not post secrets in the chat or Git.
+
+First deliver a simple working local vertical slice; then test an actual authorized card edit in both directions, offline recovery, simultaneous edits, restart and upgrade persistence. Provide separate implementation, test and owner-acceptance status. Do not publish or overwrite an existing repository; propose the separate repository/package arrangement first. Command Center source may be read for reference but keep this application's work isolated.

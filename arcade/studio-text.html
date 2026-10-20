@@ -1,0 +1,3 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Text Reader</title><style>:root{color-scheme:dark}body{margin:0;background:transparent;color:#e4efff;font:28px Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;text-shadow:2px 2px #100d20}</style></head><body><output id="value"></output><script>
+async function poll(){try{const r=await fetch('/api/studio/text',{cache:'no-store'}),v=await r.json();document.getElementById('value').textContent=v.value;}catch{}setTimeout(poll,1000);}poll();
+</script></body></html>

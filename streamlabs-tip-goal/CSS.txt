@@ -1,0 +1,42 @@
+/* SHELDONTWITCHING LABELS — STREAMLABS TIP GOAL CUSTOM CSS
+   Streamlabs owns the actual goal, donation totals and updates.
+   Theme colors are exported by SheldonTwitching Labels.
+*/
+#st-tip-goal.st-arcade-goal {
+  --st-accent: %%ACCENT%%;
+  --st-trim: %%SECONDARY%%;
+  --st-gold: #ffc764;
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: min(100%, 750px);
+  min-height: 96px;
+  padding: 10px 18px 8px;
+  color: #fff;
+  background: linear-gradient(110deg, rgba(22,5,39,.95), rgba(66,9,101,.96) 50%, rgba(24,5,44,.96));
+  border-top: 3px solid var(--st-accent);
+  border-bottom: 3px solid var(--st-trim);
+  clip-path: polygon(0 0, 97% 0, 100% 24%, 100% 100%, 3% 100%, 0 76%);
+  font-family: Impact, 'Arial Narrow', 'Segoe UI', sans-serif;
+  text-shadow: 1px 2px 2px #090212;
+  filter: drop-shadow(0 0 5px rgba(225,20,210,.5));
+}
+#st-tip-goal *, #st-tip-goal *::before, #st-tip-goal *::after { box-sizing: border-box; }
+#st-tip-goal .st-goal-header { display: flex; align-items: center; gap: 8px; height: 27px; }
+#st-tip-goal .st-goal-chip { color: var(--st-gold); font-size: 24px; line-height: 1; text-shadow: 0 0 10px #ff8b19; }
+#st-tip-goal .st-goal-title { min-width: 0; flex: 1; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: %%FONT_SIZE%%px; letter-spacing: 1px; text-transform: uppercase; }
+#st-tip-goal .st-goal-coins { font-size: 12px; letter-spacing: 4px; color: var(--st-gold); opacity: .85; }
+#st-tip-goal .st-goal-track { position: relative; margin-top: 4px; width: 100%; height: 18px; overflow: hidden; background: #0c0617; border: 2px solid #7d24bc; box-shadow: inset 0 0 6px #000; }
+#st-tip-goal .st-goal-fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--st-trim), var(--st-accent) 58%, #fdaaff); box-shadow: 0 0 12px var(--st-accent); transition: width 800ms cubic-bezier(.19,.84,.32,1); }
+#st-tip-goal .st-goal-stripes { position: absolute; inset: 0; pointer-events: none; background: repeating-linear-gradient(90deg, transparent 0 49px, #1c032c75 50px 51px); }
+#st-tip-goal .st-goal-footer { display: flex; align-items: center; gap: 5px; margin-top: 4px; font: 700 12px 'Segoe UI',Arial,sans-serif; }
+#st-tip-goal .st-goal-separator { color: #c6a3db; }
+#st-tip-goal .st-goal-percent { margin-left: auto; color: var(--st-gold); }
+#st-tip-goal[data-animation="shine"] .st-goal-fill { background-size: 200% 100%; animation: st-goal-shine 3.2s linear infinite; }
+#st-tip-goal[data-animation="pulse"] .st-goal-fill { animation: st-goal-pulse 1.6s ease-in-out infinite; }
+#st-tip-goal.st-goal-updated { animation: st-goal-pop .45s ease-out; }
+@keyframes st-goal-shine { to { background-position: -200% 0; } }
+@keyframes st-goal-pulse { 50% { filter: brightness(1.4); } }
+@keyframes st-goal-pop { 40% { filter: brightness(1.45); } }
+@media (prefers-reduced-motion: reduce) { #st-tip-goal *, #st-tip-goal { animation: none !important; transition: none !important; } }
+/* User CSS overrides come AFTER this generated stylesheet. */

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "base": "Read ARTSTYLE.md and the attached relevant original PNG references. Produce ONE candidate asset in detailed stepped arcade pixel art, navy/cyan/violet with restrained magenta and a consistent top-left keylight. Use genuine alpha transparency outside the subject, no labels, checkerboard, UI, people, replacement logos, photographic noise or blurred base shading. Preserve the specified stage perspective, fixed anchors and declared pixel grid. Keep unlit art and physical shadows separate from emission. Return actual dimensions and any unmet requirements; do not claim pixel-exact timing or loops without inspection.",
+  "assets": [
+    {
+      "id": "rooftop_hvac_body",
+      "requestedCanvas": "256x256",
+      "brief": "Compact rusted rooftop HVAC housing; separate grille/fan from housing; fixed lower-center pivot.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "rooftop_hvac_fan",
+      "requestedCanvas": "128x128",
+      "brief": "Four-phase pixel fan rotor inside a fixed transparent circular opening; no outer housing.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "bridge_rivet_bracket",
+      "requestedCanvas": "256x256",
+      "brief": "Steel support bracket with separate plate, rivets and dark structural seam; no graffiti across edges.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "brick_parapet_module",
+      "requestedCanvas": "256x256",
+      "brief": "Low brick parapet with separate top/front faces and inset cyan/violet paint; clean capstone edges.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "pipe_elbow",
+      "requestedCanvas": "128x128",
+      "brief": "Bent pipe with clamps; pixel rust and upper-left highlights; contact shadow separate.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "chain_link_segment",
+      "requestedCanvas": "256x256",
+      "brief": "Fixed-height wire fence with posts, separate mesh, transparent holes and restrained highlights.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "roof_vent",
+      "requestedCanvas": "256x256",
+      "brief": "Low roof vent with horizontal slats, unlit base and contact shadow; no baked steam.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "wall_lamp_unlit",
+      "requestedCanvas": "128x256",
+      "brief": "Unlit industrial cage lamp, physical wall mount, glass, metal housing; emission separate.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "blank_sign_housing",
+      "requestedCanvas": "256x256",
+      "brief": "Empty sign housing sized for the supplied ST mark; no generated letters; separate clean trim and mount shadow.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "puddle_coverage",
+      "requestedCanvas": "256x128",
+      "brief": "Shallow irregular puddle coverage, fixed perspective and crisp alpha; no scenery or baked animation.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "pavement_tile",
+      "requestedCanvas": "256x256",
+      "brief": "A worn roof tile module with crisp cracks and stains; no baked water or global lighting.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "drainage_grate",
+      "requestedCanvas": "256x128",
+      "brief": "Dark drainage grate, separate recess/contact shadow and metal grille; no pavement background.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "left_cable_loop",
+      "requestedCanvas": "128x256",
+      "brief": "Hanging dark cable loop with stepped silhouette and attachment points; no wall or glow.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "mill_brick_wall",
+      "requestedCanvas": "256x256",
+      "brief": "Weathered brick mill wall material, 4-8-tone ramps; keep neon reflection a separate receiver layer.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "river_reflection_strip",
+      "requestedCanvas": "512x128",
+      "brief": "Horizontally tileable pixel water highlight pattern, no buildings or bridge silhouette baked in.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "maine_treeline",
+      "requestedCanvas": "512x256",
+      "brief": "Distant dark treeline silhouette on alpha; no precise real-location landmark claim.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "far_cloud_sheet",
+      "requestedCanvas": "1024x256",
+      "brief": "Four aligned small cloud study frames; hard pixel clusters, same bounds and pivot, no bloom; separate alpha.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "steam_sheet",
+      "requestedCanvas": "1024x256",
+      "brief": "Four aligned steam poses from one fixed emitter, pixel opacity steps; no soft glow or floor.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "rain_sheet",
+      "requestedCanvas": "1024x256",
+      "brief": "Four aligned sparse diagonal rain phases with transparent cells; maintain streak size and wind direction.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "snow_sheet",
+      "requestedCanvas": "1024x256",
+      "brief": "Four aligned depth-consistent snow phases, same pixel-size flakes; no cloud or ground.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "fog_tile",
+      "requestedCanvas": "512x256",
+      "brief": "A seamless horizontal mist tile with authored opacity clusters; no baked blue backdrop.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "puddle_ripple_sheet",
+      "requestedCanvas": "1024x256",
+      "brief": "Four aligned expanding elliptical pixel ripples at a fixed center; loop seam not assumed.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "lamp_emission_mask",
+      "requestedCanvas": "128x256",
+      "brief": "Grayscale emission mask matching the supplied unlit lamp exactly; no housing pixels in glow mask.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "lamp_receiver_wall",
+      "requestedCanvas": "1920x1080",
+      "brief": "Full-stage grayscale bounded wall receiver registered to the approved lamp anchor; black elsewhere.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "weather_occlusion",
+      "requestedCanvas": "1920x1080",
+      "brief": "Full-stage binary/grayscale occlusion for the approved foreground hardware; geometry must match reference.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "floor_wet_mask",
+      "requestedCanvas": "1920x1080",
+      "brief": "Full-stage grayscale wet-receive coverage limited to declared floor puddles; no color texture.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "precision_socket_mount",
+      "requestedCanvas": "256x128",
+      "brief": "Recessed elliptical socket collar, crisp dark inner gutter and cyan outer outline; center transparent; no button.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "circuit_socket_mount",
+      "requestedCanvas": "256x128",
+      "brief": "Segmented circuit collar with traces, dark separators and transparent opening; no physical cap or rim.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "graffiti_socket_mount",
+      "requestedCanvas": "256x128",
+      "brief": "Deck-print graffiti halo contained between clean inner/outer collar boundaries; no paint across the rim.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "tournament_socket_mount",
+      "requestedCanvas": "256x128",
+      "brief": "Stepped polygonal collar with subtle radial tick details and transparent opening; fixed deck perspective.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "ST_music_sign_unlit",
+      "requestedCanvas": "256x256",
+      "brief": "Unbranded wall/equipment sign housing with exact supplied ST Smart Object inserted later; unlit base, mount and clean trim.",
+      "status": "to-generate-or-refine"
+    },
+    {
+      "id": "ST_music_sign_masks",
+      "requestedCanvas": "1920x1080",
+      "brief": "Separate raw emission, wall/equipment/floor receiver, occlusion and wet-reflection masks for the required ST music-reactive asset; no logo redraw.",
+      "status": "to-generate-or-refine"
+    }
+  ]
+}

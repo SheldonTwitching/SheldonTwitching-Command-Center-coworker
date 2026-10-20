@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SheldonTwitching Gameplay</title><link rel="stylesheet" href="scene.css"></head><body>
+<main id="stage" data-scene="gameplay">
+  <div id="monitor" aria-hidden="true"></div>
+  <img id="cabinet" src="arcade-frame.webp" alt="" aria-hidden="true">
+  <div id="scanlines" aria-hidden="true"></div>
+  <section class="ui gameplay-only" id="tip-widget"><iframe src="http://127.0.0.1:47831/tip-bar" title="Stream Costs tip goal"></iframe></section>
+  <section class="ui gameplay-only" id="rotation-widget"><iframe src="http://127.0.0.1:47831/overlay" title="Followers subscribers and donations"></iframe></section>
+  <section class="ui gameplay-only" id="spotify-widget"><iframe src="http://127.0.0.1:47831/now-playing" title="Spotify Now Playing"></iframe></section>
+  <aside class="ui gameplay-only" id="social-box"><div class="label">!TIP TO SUPPORT</div><div class="subtext">TYPE !LOBBY TO JOIN</div></aside>
+  <section class="scene-title" aria-live="polite"><h1 id="main-title"></h1><div class="rule"></div><p id="subtitle"></p></section>
+  <div class="float-badges" aria-hidden="true"><img src="../assets/sf6/ryu.png" alt=""><img src="../assets/sf6/juri.png" alt=""></div>
+  <div class="scene-card" id="footnote"></div>
+  <div id="cam-guide" aria-hidden="true"></div>
+</main><script src="scene.js"></script></body></html>

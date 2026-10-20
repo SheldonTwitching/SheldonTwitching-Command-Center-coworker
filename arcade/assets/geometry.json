@@ -1,0 +1,178 @@
+{
+  "canvas": {
+    "width": 2060,
+    "height": 1220
+  },
+  "cabinet": {
+    "x": 59,
+    "y": 0,
+    "width": 1942,
+    "height": 1220,
+    "src": "CABINET.png"
+  },
+  "reference": "ArcadeCabinet_FINAL.png",
+  "buttonSheet": {
+    "src": "BUTTON.png",
+    "x": 1113,
+    "y": 1049,
+    "width": 440,
+    "height": 110
+  },
+  "joystick": {
+    "x": 842,
+    "y": 942,
+    "width": 100,
+    "height": 204,
+    "src": "NEUTRAL.png",
+    "pivot": [
+      891,
+      1115
+    ],
+    "framePivots": {
+      "BACK": [
+        49,
+        157
+      ],
+      "BACK_LEFT": [
+        109,
+        139
+      ],
+      "BACK_RIGHT": [
+        13,
+        137
+      ],
+      "FRONT": [
+        49,
+        147
+      ],
+      "FRONT_LEFT": [
+        111,
+        135
+      ],
+      "FRONT_RIGHT": [
+        13,
+        135
+      ],
+      "LEFT": [
+        121,
+        151
+      ],
+      "NEUTRAL": [
+        49,
+        173
+      ],
+      "RIGHT": [
+        13,
+        151
+      ]
+    }
+  },
+  "game": {
+    "x": 443,
+    "y": 374,
+    "width": 1174,
+    "height": 578
+  },
+  "missing": [],
+  "gif": {
+    "width": 400,
+    "height": 214,
+    "frames": 13,
+    "durationMs": 1300,
+    "subject": "blinking eyes; not a cabinet animation"
+  },
+  "fx": {
+    "x": 15,
+    "y": 0,
+    "width": 2030,
+    "height": 1220,
+    "src": "FX.png"
+  },
+  "buttons": [
+    {
+      "x": 1139,
+      "y": 1053,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1219,
+      "y": 1049,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1299,
+      "y": 1049,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1379,
+      "y": 1053,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1113,
+      "y": 1093,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1193,
+      "y": 1089,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1273,
+      "y": 1089,
+      "width": 78,
+      "height": 66
+    },
+    {
+      "x": 1353,
+      "y": 1093,
+      "width": 78,
+      "height": 66
+    }
+  ],
+  "decorativeButton": {
+    "x": 1475,
+    "y": 1083,
+    "width": 78,
+    "height": 66
+  },
+  "marquee": {
+    "x": 15,
+    "y": 0,
+    "width": 2030,
+    "height": 270,
+    "src": "MARQUEE.png"
+  },
+  "provenance": {
+    "ArcadeCabinet_FINAL.png": "cb9083800e4ff0d35c8fef99eb1f8b3204d6271fd70af5afa62907273b0bfe59",
+    "ARROW_DOWN.png": "f2d3e032ce6bc32a9765d7cd5abc6ad2d5f69a958fe7f5362cc39c145b084730",
+    "ARROW_L.png": "62b6aa534bb68d183c7c7733dc74c7514386745b621f21aef08a1511dc7386ee",
+    "ARROW_R.png": "a0f363863d9db1106072bb6c8e818f024a0b28f973b0d66527ffbe4986a65ee4",
+    "ARROW_UP.png": "8b7c8436bad8305bed13b65e63c84f832c855faee2fd73965c7ee849cebe1ac8",
+    "BACK.png": "27ab16a1a64eaddcd9d77a4041dd7f6ac5f17833ab7927b718a0047f09d103a2",
+    "BACK_LEFT.png": "ad484998a6f6e5b6a3eea915667888853249b8c902e8315d1b61a982cbc53387",
+    "BACK_RIGHT.png": "d5f78258ee3ba2ac2dbff77b4649afe397a4d276cbd435d34b3126fd231ae72e",
+    "BALL.png": "ade0096e162f888c07aa8c7a056c9606b1cd74b8cf0af11fdf0017c3947d8860",
+    "BUTTON.png": "04719e0fadd254dbbc29f2518716d3be2672e9d5689010d2ffae02e874a0c090",
+    "BUTTON_AREA.png": "04719e0fadd254dbbc29f2518716d3be2672e9d5689010d2ffae02e874a0c090",
+    "BUTTON_NEUTRAL.png": "c3db77040de8ea6b3eab1a0b53b0e18e3af3a805fbc197686afd6f4c426449b7",
+    "BUTTON_PRESSED.png": "d28de58a1d1288d58c4d893c3777c10b10f064fbe7797e4c27a873dcc11af8c1",
+    "CABINET.png": "eb21267dac4ce82efff14b12f2167bb353240a5e8255a20eaae91bc1798ad7f1",
+    "FRONT.png": "3da026b3e6bc21cac2b2d70fd8b85b3f14e34df5fd731fc1da37499512dcabf1",
+    "FRONT_LEFT.png": "aeaaf09389af4c2ca50d10df2a667877dc1e6d0a0e150f6a3270202cff448355",
+    "FRONT_RIGHT.png": "e59c64d3de2bde1af72da120ce74177dfba2dd31cd96986e196e33ab1d82e503",
+    "FX.png": "df819a31096f046301dc31e607ecb5e67e45ecc7eb9daba79661933269670da6",
+    "LEFT.png": "3763c8a4912593e01928ccdbde2522980a6f2a580d6874287bc57188240ae528",
+    "MARQUEE.png": "2473dd49ef776ef1a0b9be92d49b6f3bc7a4d164dd23906899e9b144a4ec7714",
+    "NEUTRAL.png": "401d7272e950022f287ac99bb425b59061f3d03b3f8026e35541fb4ff663e68c",
+    "RIGHT.png": "60c3714b39ac9164dee962503c2bd4c18e5a45ac550eff502b7ddfb2d1b12fee"
+  }
+}

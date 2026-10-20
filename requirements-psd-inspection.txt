@@ -1,0 +1,2 @@
+# Optional authoring analysis only; not bundled with the Windows runtime.
+psd-tools==1.25.0

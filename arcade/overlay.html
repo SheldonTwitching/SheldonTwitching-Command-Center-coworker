@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SheldonTwitching Arcade Overlay v2</title><link rel="stylesheet" href="/arcade/overlay.css"></head><body>
+<main class="original" id="arcade-stage" aria-label="SheldonTwitching arcade stream overlay">
+  <div id="original-art" aria-label="Original cabinet artwork">
+    <img class="original-cabinet" src="/arcade/assets/CABINET.png" alt="">
+    <img class="original-fx" src="/arcade/assets/FX.png" alt=""><img class="original-logo" src="/arcade/assets/MARQUEE.png" alt="SheldonTwitching"><canvas id="stick-reflection" width="2060" height="1220" aria-hidden="true"></canvas><img class="original-brand" src="/arcade/world/assets/logo-glacier-violet.png" alt="SheldonTwitching"><div id="original-buttons"></div>
+    <img id="original-stick" src="/arcade/assets/NEUTRAL.png" alt="Joystick neutral">
+    <div id="original-arrows"></div>
+    <div id="original-event" role="status"></div>
+    <div id="original-widgets"><div id="original-now-playing"><iframe title="Spotify Now Playing on original cabinet" src="/now-playing" tabindex="-1"></iframe></div>
+    <div id="original-labels"><iframe title="Streamlabels on original cabinet" src="/overlay" tabindex="-1"></iframe></div></div>
+  </div>
+  <header class="marquee">
+    <span class="marquee-rail left-rail"></span>
+    <div class="brand"><span id="marquee-text">SHELDONTWITCHING</span><small id="subtitle-text">INSERT COIN · JOIN THE FIGHT</small></div>
+    <span class="marquee-rail right-rail"></span>
+  </header>
+  <div class="body-rail rail-left" aria-hidden="true"></div><div class="body-rail rail-right" aria-hidden="true"></div>
+  <div id="screen-frame" aria-label="Reserved transparent 16:9 window for OBS Game Capture">
+    <div class="rim-glint"></div><div class="corners top-left"></div><div class="corners top-right"></div><div class="corners bottom-left"></div><div class="corners bottom-right"></div>
+    <div id="game-scanlines" aria-hidden="true"></div>
+  </div>
+  <div class="screen-title screen-title-left">PLAYER 1 <span>● ONLINE</span></div>
+  <div class="screen-title screen-title-right">VS <span>ARCADE MODE</span></div>
+  <div id="tip-slot" aria-label="Placement guide for existing separate Streamlabs Tip Goal browser source"></div>
+  <div id="labels-slot"><iframe title="Rotating Streamlabels labels" src="/overlay" loading="lazy" tabindex="-1"></iframe></div>
+  <div class="bottom-deck">
+    <div id="now-playing-slot"><iframe title="Spotify Now Playing" src="/now-playing" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="deck-engraving">READY PLAYER ONE</div><div id="event-banner" role="status" aria-live="polite"><strong id="event-heading">EVENT!</strong><span id="event-message"></span></div>
+    <div class="control-assembly">
+      <div class="joystick" aria-hidden="true"><div class="joystick-handle"></div><div class="joystick-shaft"></div><div class="joystick-ring"></div></div>
+      <div class="button-panel" aria-label="Reactive arcade button panel">
+        <button type="button" class="arcade-button" data-button="0" aria-label="Arcade button A"></button>
+        <button type="button" class="arcade-button" data-button="1" aria-label="Arcade button B"></button>
+        <button type="button" class="arcade-button" data-button="2" aria-label="Arcade button X"></button>
+        <button type="button" class="arcade-button" data-button="3" aria-label="Arcade button Y"></button>
+        <button type="button" class="arcade-button" data-button="4" aria-label="Arcade button LB"></button>
+        <button type="button" class="arcade-button" data-button="5" aria-label="Arcade button RB"></button>
+        <button type="button" class="arcade-button" data-button="6" aria-label="Arcade button Back"></button>
+        <button type="button" class="arcade-button" data-button="7" aria-label="Arcade button Start"></button>
+      </div>
+    </div>
+  </div>
+  <div class="cabinet-grain" aria-hidden="true"></div>
+  <div class="cabinet-flash" aria-hidden="true"></div>
+</main>
+<script src="/arcade/sprites.js"></script>
+<script src="/arcade/overlay.js"></script>
+<script type="module" src="/arcade/marquee-layer.js"></script></body></html>

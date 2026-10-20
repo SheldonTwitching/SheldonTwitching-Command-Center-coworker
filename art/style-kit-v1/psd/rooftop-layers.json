@@ -1,0 +1,2873 @@
+{
+  "schemaVersion": 1,
+  "status": "authoring-blueprint-not-existing-PSD-layers",
+  "stageId": "rooftop",
+  "name": "Rooftop Circuit / Penobscot Rooftop",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "sourceReferenceCanvas": [
+    1672,
+    941
+  ],
+  "color": "sRGB RGB/8",
+  "guides": {
+    "status": "proposed-production-guides-not-traced-source-measurements",
+    "horizonY": 420,
+    "rearFloorY": 736,
+    "fightBaselineY": 930,
+    "sunMoonCenter": [
+      1140,
+      320
+    ],
+    "safeFightRect": [
+      300,
+      736,
+      1320,
+      264
+    ]
+  },
+  "groups": [
+    {
+      "id": "00_REFERENCE_AND_GUIDES",
+      "renderOrder": 0,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "reference_original_flat",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "reference_graffiti_palette",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "reference_pixel_grid",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "guide_horizon",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "guide_roof_rear_edge",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "guide_fight_baseline",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "guide_safe_regions",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "guide_vanishing_point",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "notes_asset_ids",
+          "role": "guide",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "10_SKY",
+      "renderOrder": 10,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "sky_day_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sky_day_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sky_dusk_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sky_dusk_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sky_night_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sky_night_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sky_dawn_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sky_dawn_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sunset_warm_band",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sunset_warm_band.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "night_stars",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/night_stars.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sun_disc",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sun_disc.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sun_emission_mask",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sun_emission_mask.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "moon_disc",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/moon_disc.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "moon_emission_mask",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/moon_emission_mask.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sky_atmospheric_haze",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/10_SKY/sky_atmospheric_haze.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "20_FAR_CLOUDS",
+      "renderOrder": 20,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "clouds_far_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/20_FAR_CLOUDS/clouds_far_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "clouds_far_sunlit_edges",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/20_FAR_CLOUDS/clouds_far_sunlit_edges.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "clouds_far_night_ramp",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/20_FAR_CLOUDS/clouds_far_night_ramp.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "clouds_far_opacity_mask",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/20_FAR_CLOUDS/clouds_far_opacity_mask.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "clouds_far_wrap_tile",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/20_FAR_CLOUDS/clouds_far_wrap_tile.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "30_DISTANT_LANDSCAPE_AND_CITY",
+      "renderOrder": 30,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "maine_treeline_silhouette",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/maine_treeline_silhouette.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "distant_low_skyline",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/distant_low_skyline.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "distant_mid_skyline",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/distant_mid_skyline.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "distant_tower_accents",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/distant_tower_accents.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rooftop_antennas",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/rooftop_antennas.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "crane_silhouettes",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/crane_silhouettes.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "skyline_contact_haze",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/skyline_contact_haze.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "skyline_window_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/skyline_window_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        },
+        {
+          "id": "antenna_beacon_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/antenna_beacon_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        },
+        {
+          "id": "skyline_light_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/30_DISTANT_LANDSCAPE_AND_CITY/skyline_light_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "35_PENOBSCOT_RIVER_AND_BRIDGE",
+      "renderOrder": 35,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "river_base_color",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_base_color.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "river_far_bank",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_far_bank.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "river_directional_ripple_tile",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_directional_ripple_tile.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "river_sky_reflection",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_sky_reflection.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "river_city_reflection",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_city_reflection.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "river_bridge_reflection",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_bridge_reflection.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "river_reflection_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/river_reflection_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "bridge_rear_piers",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/bridge_rear_piers.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "bridge_deck",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/bridge_deck.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "bridge_truss_or_girders",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/bridge_truss_or_girders.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "bridge_contact_shadows",
+          "role": "shadow",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/bridge_contact_shadows.png",
+          "status": "authoring-required",
+          "blendPreview": "Multiply"
+        },
+        {
+          "id": "bridge_light_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/35_PENOBSCOT_RIVER_AND_BRIDGE/bridge_light_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        }
+      ]
+    },
+    {
+      "id": "40_NEAR_CLOUDS_AND_DEPTH",
+      "renderOrder": 40,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "clouds_near_wrap_tile",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/40_NEAR_CLOUDS_AND_DEPTH/clouds_near_wrap_tile.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "clouds_near_lit_edges",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/40_NEAR_CLOUDS_AND_DEPTH/clouds_near_lit_edges.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "distance_fog",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/40_NEAR_CLOUDS_AND_DEPTH/distance_fog.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "midground_mist",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/40_NEAR_CLOUDS_AND_DEPTH/midground_mist.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "skyline_weather_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/40_NEAR_CLOUDS_AND_DEPTH/skyline_weather_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "50_ROOFTOP_REAR_STRUCTURE",
+      "renderOrder": 50,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "rear_parapet_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_parapet_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_parapet_top_faces",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_parapet_top_faces.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_parapet_cracks",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_parapet_cracks.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_parapet_paint",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_parapet_paint.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_parapet_seams",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_parapet_seams.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_parapet_contact_shadow",
+          "role": "shadow",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_parapet_contact_shadow.png",
+          "status": "authoring-required",
+          "blendPreview": "Multiply"
+        },
+        {
+          "id": "fence_posts",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/fence_posts.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fence_top_rail",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/fence_top_rail.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fence_wire_mesh",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/fence_wire_mesh.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fence_wire_highlights",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/fence_wire_highlights.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fence_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/fence_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_pipes_horizontal",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_pipes_horizontal.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "pipe_elbows_and_clamps",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/pipe_elbows_and_clamps.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rear_junction_boxes",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rear_junction_boxes.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "pipe_contact_shadows",
+          "role": "shadow",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/pipe_contact_shadows.png",
+          "status": "authoring-required",
+          "blendPreview": "Multiply"
+        },
+        {
+          "id": "rooftop_edge_shadow",
+          "role": "shadow",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/50_ROOFTOP_REAR_STRUCTURE/rooftop_edge_shadow.png",
+          "status": "authoring-required",
+          "blendPreview": "Multiply"
+        }
+      ]
+    },
+    {
+      "id": "60_LEFT_FOREGROUND_ASSEMBLY",
+      "renderOrder": 60,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "left_steel_upright",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_steel_upright.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_cross_braces",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_cross_braces.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_overhead_beam",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_overhead_beam.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_rivet_details",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_rivet_details.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_steel_edge_highlights",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_steel_edge_highlights.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_hanging_cables",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_hanging_cables.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_vertical_conduit",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_vertical_conduit.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_lamp_mount",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_mount.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_lamp_housing",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_housing.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_lamp_glass_unlit",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_glass_unlit.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_lamp_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        },
+        {
+          "id": "left_lamp_receiver_wall",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_receiver_wall.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_lamp_receiver_floor",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_receiver_floor.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_lamp_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_lamp_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "left_graffiti_decal",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/60_LEFT_FOREGROUND_ASSEMBLY/left_graffiti_decal.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "65_RIGHT_FOREGROUND_ASSEMBLY",
+      "renderOrder": 65,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "right_overhead_platform",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_overhead_platform.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_platform_guardrail",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_platform_guardrail.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_upright",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_upright.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_rivets",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_rivets.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_cable_loops",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_cable_loops.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_conduit",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_conduit.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_lamp_mount",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_mount.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_lamp_housing",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_housing.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_lamp_glass_unlit",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_glass_unlit.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_lamp_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        },
+        {
+          "id": "right_lamp_receiver_wall",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_receiver_wall.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_lamp_receiver_floor",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_receiver_floor.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_lamp_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_lamp_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_fan_grille",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_fan_grille.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_secondary_vent",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_secondary_vent.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_pipework",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_pipework.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "right_equipment_contact_shadows",
+          "role": "shadow",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/65_RIGHT_FOREGROUND_ASSEMBLY/right_equipment_contact_shadows.png",
+          "status": "authoring-required",
+          "blendPreview": "Multiply"
+        }
+      ]
+    },
+    {
+      "id": "70_FIGHT_FLOOR",
+      "renderOrder": 70,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "floor_base_tiles",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_base_tiles.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_tile_variation",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_tile_variation.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_cracks",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_cracks.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_seam_recesses",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_seam_recesses.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_edge_chips",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_edge_chips.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "drainage_grates",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/drainage_grates.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "grate_recess_shadows",
+          "role": "shadow",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/grate_recess_shadows.png",
+          "status": "authoring-required",
+          "blendPreview": "Multiply"
+        },
+        {
+          "id": "bolts_and_fasteners",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/bolts_and_fasteners.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "old_yellow_markings",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/old_yellow_markings.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_stains",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_stains.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "puddle_coverage_mask",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/puddle_coverage_mask.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "puddle_dark_base",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/puddle_dark_base.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "puddle_sky_reflection",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/puddle_sky_reflection.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "puddle_fixture_reflection",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/puddle_fixture_reflection.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "puddle_ripple_animation",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/puddle_ripple_animation.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_light_receiver",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_light_receiver.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_snow_receive_mask",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_snow_receive_mask.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "floor_precipitation_splash_mask",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/70_FIGHT_FLOOR/floor_precipitation_splash_mask.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "75_LOCAL_AMBIENT_SPRITES",
+      "renderOrder": 75,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "vent_steam_rear",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/vent_steam_rear.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "vent_steam_front",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/vent_steam_front.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "loose_cable_idle",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/loose_cable_idle.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fan_rotation",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/fan_rotation.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "tiny_airborne_dust",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/tiny_airborne_dust.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "isolated_water_drips",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/isolated_water_drips.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "drip_impact_ripples",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/drip_impact_ripples.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "distant_window_flicker",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/distant_window_flicker.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "antenna_beacon_cycle",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/75_LOCAL_AMBIENT_SPRITES/antenna_beacon_cycle.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "80_WEATHER_DEPTH_BANDS",
+      "renderOrder": 80,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "rain_far",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/rain_far.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rain_mid",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/rain_mid.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rain_near",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/rain_near.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "rain_floor_splashes",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/rain_floor_splashes.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "snow_far",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/snow_far.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "snow_mid",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/snow_mid.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "snow_near",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/snow_near.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "snow_surface_accumulation",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/snow_surface_accumulation.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fog_far",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/fog_far.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fog_mid",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/fog_mid.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fog_ground",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/fog_ground.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "storm_lightning_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/storm_lightning_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        },
+        {
+          "id": "storm_sky_receiver",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/storm_sky_receiver.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "storm_building_receiver",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/storm_building_receiver.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "storm_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/80_WEATHER_DEPTH_BANDS/storm_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    },
+    {
+      "id": "85_SCENE_LIGHT_RIG",
+      "renderOrder": 85,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "keylight_direction_guide",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/keylight_direction_guide.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "ambient_time_ramp",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/ambient_time_ramp.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sunlight_receiver",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/sunlight_receiver.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "sunlight_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/sunlight_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "moonlight_receiver",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/moonlight_receiver.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fixture_receiver_left",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/fixture_receiver_left.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "fixture_receiver_right",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/fixture_receiver_right.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "music_focal_emission",
+          "role": "emission",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/music_focal_emission.png",
+          "status": "authoring-required",
+          "blendPreview": "Screen"
+        },
+        {
+          "id": "music_focal_receiver",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/music_focal_receiver.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "music_focal_occlusion",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/music_focal_occlusion.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "music_focal_reflection",
+          "role": "base",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/music_focal_reflection.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "contact_shadow_receivers",
+          "role": "mask",
+          "export": true,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": "layers/85_SCENE_LIGHT_RIG/contact_shadow_receivers.png",
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "music_ST_sign",
+          "role": "required-asset-group",
+          "export": false,
+          "status": "authoring-required",
+          "children": [
+            "mount_contact_shadow",
+            "unlit_housing",
+            "clipped_panel_paint",
+            "clean_trim",
+            "logo_original",
+            "logo_emission",
+            "panel_emission",
+            "receiver_wall",
+            "receiver_equipment",
+            "receiver_floor",
+            "occlusion",
+            "wet_reflection"
+          ],
+          "logoSource": "references/brand/ST-monogram-original.png",
+          "spec": "../music-focal-asset.json"
+        }
+      ]
+    },
+    {
+      "id": "90_FINAL_PREVIEW",
+      "renderOrder": 90,
+      "psdOrder": "Higher-numbered groups above lower groups",
+      "children": [
+        {
+          "id": "time_variant_selector",
+          "role": "base",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "weather_variant_selector",
+          "role": "base",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "pixel_scale_comparison",
+          "role": "base",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        },
+        {
+          "id": "export_preview_checkerboard",
+          "role": "base",
+          "export": false,
+          "exportCanvas": [
+            1920,
+            1080
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "trim": false,
+          "file": null,
+          "status": "authoring-required",
+          "blendPreview": "Normal"
+        }
+      ]
+    }
+  ],
+  "clock": {
+    "timezone": "America/New_York",
+    "location": "Bangor Maine USA 04401",
+    "manualOverrides": true
+  },
+  "animation": {
+    "fps": [
+      24,
+      30,
+      60
+    ],
+    "defaultFps": 30,
+    "targetsSeconds": {
+      "clouds": 128,
+      "rain": 4,
+      "snow": 8,
+      "fog": 8,
+      "steam": 2,
+      "riverRipple": 4,
+      "fixtureIdle": 2
+    },
+    "fullCompositeLoopSeconds": 128,
+    "endpoint": "Frames 0..N-1; at t=T return to phase 0 without duplicate endpoint hold",
+    "method": "Small tile/sprite reuse and seeded transforms; loop targets must be verified"
+  },
+  "export": {
+    "fullCanvasLayers": true,
+    "rawMasksSeparate": true,
+    "referencesHidden": true,
+    "timingJsonRequired": true
+  },
+  "requiredMusicReactiveAssets": [
+    "rooftop-music-ST-sign"
+  ]
+}
